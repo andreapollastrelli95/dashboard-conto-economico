@@ -1,0 +1,63 @@
+table Account
+	lineageTag: 12292d28-640c-4ad5-b3d5-52a8c139bc75
+
+	column AccountKey
+		dataType: int64
+		isHidden
+		lineageTag: 50302774-4b08-4d56-8451-9d70fa735e06
+		summarizeBy: none
+		sourceColumn: AccountKey
+
+	column AccountCode
+		dataType: int64
+		lineageTag: dce5ef67-35b1-4568-81a2-3334448fc039
+		summarizeBy: none
+		sourceColumn: AccountCode
+
+	column Account
+		dataType: string
+		lineageTag: 1ac4ce81-e4fb-4937-8853-af3d26062369
+		summarizeBy: none
+		sourceColumn: Account
+
+	column PLSection
+		dataType: string
+		lineageTag: 9e414fa2-d897-44bc-b299-1a1d0ac0ff21
+		summarizeBy: none
+		sourceColumn: PLSection
+
+	column PLSubsection
+		dataType: string
+		lineageTag: 04162007-8976-4a92-b15d-343163e8fc65
+		summarizeBy: none
+		sourceColumn: PLSubsection
+
+	column PLLineKey
+		dataType: int64
+		isHidden
+		lineageTag: afcc4ad5-c16a-4fa5-b0a3-2e594ee5cef7
+		summarizeBy: none
+		sourceColumn: PLLineKey
+
+	column PLSign
+		dataType: int64
+		lineageTag: 57dcea23-58cb-4604-9d48-e3b0f733393a
+		summarizeBy: none
+		sourceColumn: PLSign
+
+	column SortOrder
+		dataType: int64
+		lineageTag: fc9562d4-c6d3-4744-b7eb-e792502fbcd3
+		summarizeBy: none
+		sourceColumn: SortOrder
+
+	partition Account = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\account.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"AccountKey", Int64.Type}, {"AccountCode", Int64.Type}, {"Account", type text}, {"PLSection", type text}, {"PLSubsection", type text}, {"PLLineKey", Int64.Type}, {"PLSign", Int64.Type}, {"SortOrder", Int64.Type}}, "en-US")
+				in
+				    Typed
+

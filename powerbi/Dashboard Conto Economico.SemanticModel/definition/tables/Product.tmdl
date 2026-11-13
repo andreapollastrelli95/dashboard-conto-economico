@@ -1,0 +1,44 @@
+table Product
+	lineageTag: cec83376-8023-45b5-88d3-1036799b3322
+
+	column ProductKey
+		dataType: int64
+		isHidden
+		lineageTag: badcf5bc-086a-4b12-bd7a-41f6063aca3d
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column ProductCode
+		dataType: string
+		lineageTag: 757fc9c6-7765-4844-9d3c-bcb361af4275
+		summarizeBy: none
+		sourceColumn: ProductCode
+
+	column ProductName
+		dataType: string
+		lineageTag: cb5bc924-7b6b-4e1a-8e5f-bbc1f4e9e729
+		summarizeBy: none
+		sourceColumn: ProductName
+
+	column ProductCategory
+		dataType: string
+		lineageTag: a04f2f5a-7267-48b3-a80e-b9b52b247065
+		summarizeBy: none
+		sourceColumn: ProductCategory
+
+	column ProductSubcategory
+		dataType: string
+		lineageTag: d216ae06-7f78-4d5b-b4ce-788d978f2028
+		summarizeBy: none
+		sourceColumn: ProductSubcategory
+
+	partition Product = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\product.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"ProductKey", Int64.Type}, {"ProductCode", type text}, {"ProductName", type text}, {"ProductCategory", type text}, {"ProductSubcategory", type text}}, "en-US")
+				in
+				    Typed
+

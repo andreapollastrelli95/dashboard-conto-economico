@@ -1,0 +1,400 @@
+table FactPL
+	lineageTag: cf8e1616-4193-4376-a1fa-bd329f2d6058
+
+	measure Revenue = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Ricavi" )
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: 50803dbd-6207-4132-8694-de10c152d12a
+
+	measure COGS = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Costo del venduto" )
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: d80d8b8b-002d-4715-86ef-437a6250bd9a
+
+	measure 'Gross Margin' = [Revenue] - [COGS]
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: 16ac9087-3660-4f05-9a3f-11d4c2ccbd7e
+
+	measure 'Gross Margin %' = DIVIDE ( [Gross Margin], [Revenue] )
+		formatString: 0.0%
+		displayFolder: 01 P&L
+		lineageTag: 810189ff-981e-428e-b86b-1369eff6aa95
+
+	measure 'Operating Expenses' = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Costi operativi" )
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: 5982fbf6-b0e1-401e-9cad-f8782772bf19
+
+	measure EBITDA = [Gross Margin] - [Operating Expenses]
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: 8e42bdd2-6001-421e-9904-a4eea1657033
+
+	measure 'EBITDA %' = DIVIDE ( [EBITDA], [Revenue] )
+		formatString: 0.0%
+		displayFolder: 01 P&L
+		lineageTag: 771531f3-377d-4f69-ac7b-565853bedf66
+
+	measure D&A = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Ammortamenti" )
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: f2635d37-3f74-4a4b-bc1d-150a1a65f968
+
+	measure 'Operating Profit' = [EBITDA] - [D&A]
+		formatString: #,0
+		displayFolder: 01 P&L
+		lineageTag: 31e4a9bd-1442-4fcd-b330-643b2e728e7c
+
+	measure 'Operating Profit %' = DIVIDE ( [Operating Profit], [Revenue] )
+		formatString: 0.0%
+		displayFolder: 01 P&L
+		lineageTag: b2402342-5a44-42c7-83a1-35524e5102ff
+
+	measure 'Opex % on Revenue' = DIVIDE ( [Operating Expenses], [Revenue] )
+		formatString: 0.0%
+		displayFolder: 01 P&L
+		lineageTag: 79340075-9184-4351-8767-fd65e265b231
+
+	measure 'PL Amount' =
+			VAR _Line = SELECTEDVALUE ( PLLayout[PLLineKey] )
+			VAR _Type = SELECTEDVALUE ( PLLayout[LineType] )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        _Type = "Detail",
+			            CALCULATE ( SUM ( FactPL[SignedAmount] ), Account[PLLineKey] = _Line ),
+			        _Type = "Subtotal",
+			            CALCULATE ( SUM ( FactPL[SignedAmount] ), Account[PLLineKey] < _Line ),
+			        BLANK ()
+			    )
+		formatString: #,0
+		displayFolder: 02 Conto economico (matrice)
+		lineageTag: 10da69ee-d4a9-4f82-b230-0ec6a1a1b3e1
+
+	measure 'PL Amount PY' = CALCULATE ( [PL Amount], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+		formatString: #,0
+		displayFolder: 02 Conto economico (matrice)
+		lineageTag: 03eadcc9-ee1b-438a-b140-72ef2fdf60ca
+
+	measure 'PL Delta vs PY' =
+			VAR _CY = [PL Amount]
+			VAR _PY = [PL Amount PY]
+			RETURN IF ( NOT ISBLANK ( _PY ), _CY - _PY )
+		formatString: #,0
+		displayFolder: 02 Conto economico (matrice)
+		lineageTag: 95a51673-e523-4950-a157-8d4f042a6982
+
+	measure 'PL Delta % vs PY' =
+			VAR _CY = [PL Amount]
+			VAR _PY = [PL Amount PY]
+			RETURN DIVIDE ( _CY - _PY, ABS ( _PY ) )
+		formatString: 0.0%
+		displayFolder: 02 Conto economico (matrice)
+		lineageTag: 4abbabc3-eb44-4a7e-a3c1-20e465beed76
+
+	measure 'PL % on Revenue' = DIVIDE ( [PL Amount], CALCULATE ( [Revenue], REMOVEFILTERS ( PLLayout ) ) )
+		formatString: 0.0%
+		displayFolder: 02 Conto economico (matrice)
+		lineageTag: 7a860a7f-02f5-49da-bfc1-df4971269a7c
+
+	measure 'Revenue PY' = CALCULATE ( [Revenue], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+		formatString: #,0
+		displayFolder: 03 Time intelligence
+		lineageTag: 097393f1-ca19-49e8-acb4-98ab857cc2cd
+
+	measure 'YoY Growth %' =
+			VAR _PY = [Revenue PY]
+			RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [Revenue] - _PY, _PY ) )
+		formatString: 0.0%
+		displayFolder: 03 Time intelligence
+		lineageTag: c6d088a8-f644-4b14-b3fe-9be7d1dfd629
+
+	measure 'Revenue YTD' = TOTALYTD ( [Revenue], 'Calendar'[Date] )
+		formatString: #,0
+		displayFolder: 03 Time intelligence
+		lineageTag: d62acc5c-8363-4e89-b57d-fc07344202d2
+
+	measure 'Revenue YTD PY' = CALCULATE ( [Revenue YTD], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+		formatString: #,0
+		displayFolder: 03 Time intelligence
+		lineageTag: ab090d20-bdbf-4d50-ada6-826be4d6d319
+
+	measure 'YTD Growth %' = DIVIDE ( [Revenue YTD] - [Revenue YTD PY], [Revenue YTD PY] )
+		formatString: 0.0%
+		displayFolder: 03 Time intelligence
+		lineageTag: 22b20b17-0a27-4b5a-b22a-c9f8083c8368
+
+	measure 'Revenue R12M' =
+			CALCULATE (
+			    [Revenue],
+			    DATESINPERIOD ( 'Calendar'[Date], MAX ( 'Calendar'[Date] ), -12, MONTH )
+			)
+		formatString: #,0
+		displayFolder: 03 Time intelligence
+		lineageTag: 95087e3e-2ab9-4313-9830-b34cf6572e9d
+
+	measure 'EBITDA PY' = CALCULATE ( [EBITDA], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+		formatString: #,0
+		displayFolder: 03 Time intelligence
+		lineageTag: f741e1bf-e404-48a4-b5f4-4b7b53dfe33d
+
+	measure 'EBITDA YoY %' =
+			VAR _PY = [EBITDA PY]
+			RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [EBITDA] - _PY, ABS ( _PY ) ) )
+		formatString: 0.0%
+		displayFolder: 03 Time intelligence
+		lineageTag: 8d8ee27e-510c-47f8-b23e-82caeb706dd3
+
+	measure 'EBITDA % R12M' =
+			VAR _Period = DATESINPERIOD ( 'Calendar'[Date], MAX ( 'Calendar'[Date] ), -12, MONTH )
+			RETURN DIVIDE ( CALCULATE ( [EBITDA], _Period ), CALCULATE ( [Revenue], _Period ) )
+		formatString: 0.0%
+		displayFolder: 03 Time intelligence
+		lineageTag: 64db0771-1dba-4451-b3fd-6a30ffd4a9af
+
+	measure 'Gross Margin % PY' = CALCULATE ( [Gross Margin %], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+		formatString: 0.0%
+		displayFolder: 03 Time intelligence
+		lineageTag: de40a4e9-6e72-4772-94c8-272b33bed022
+
+	measure 'Gross Margin % Delta pp' = IF ( NOT ISBLANK ( [Gross Margin % PY] ), ( [Gross Margin %] - [Gross Margin % PY] ) * 100 )
+		formatString: #,0.0
+		displayFolder: 03 Time intelligence
+		lineageTag: 6b7c7e17-9fca-461e-aa21-8f9d090b9225
+
+	measure 'Net Sales' = SUM ( FactSales[NetAmount] )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: f0c8b808-75dd-468b-939f-ad720eae4d0e
+
+	measure 'Std COGS' = SUM ( FactSales[COGSAmount] )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 6e15c59d-706e-415d-84b3-b5a8356516ef
+
+	measure 'Std Gross Margin' = [Net Sales] - [Std COGS]
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 785dbd0f-2635-47a9-8a94-1483d3b7d01d
+
+	measure 'Std Gross Margin %' = DIVIDE ( [Std Gross Margin], [Net Sales] )
+		formatString: 0.0%
+		displayFolder: 04 Vendite
+		lineageTag: 6668cc60-c9c0-4ed5-a80b-b9f35228cdcd
+
+	measure 'Gross Sales' = SUM ( FactSales[GrossAmount] )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 2ee47fad-7449-425a-8989-25ecb146c26a
+
+	measure 'Avg Discount %' =
+			DIVIDE (
+			    CALCULATE ( SUM ( FactSales[DiscountAmount] ), FactSales[DocumentType] = "FT" ),
+			    CALCULATE ( SUM ( FactSales[GrossAmount] ), FactSales[DocumentType] = "FT" )
+			)
+		formatString: 0.0%
+		displayFolder: 04 Vendite
+		lineageTag: d7b758c3-dead-4d03-8f9f-c9f80fc1d2e5
+
+	measure 'Credit Notes' = -CALCULATE ( SUM ( FactSales[NetAmount] ), FactSales[DocumentType] = "NC" )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 774f1b18-f718-4697-a586-b0dc049a6b68
+
+	measure 'Credit Notes %' = DIVIDE ( [Credit Notes], CALCULATE ( [Net Sales], FactSales[DocumentType] = "FT" ) )
+		formatString: 0.0%
+		displayFolder: 04 Vendite
+		lineageTag: b2866621-a913-4902-bf8f-96329f68d1e3
+
+	measure 'Quantity Sold' = SUM ( FactSales[Quantity] )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 419c16ef-8cf3-4b02-8388-e942e78b4842
+
+	measure Invoices = CALCULATE ( DISTINCTCOUNT ( FactSales[DocumentNumber] ), FactSales[DocumentType] = "FT" )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 34ce2d1d-bb97-4d2b-872b-3a7f21fe8b10
+
+	measure 'Avg Invoice Value' = DIVIDE ( CALCULATE ( [Net Sales], FactSales[DocumentType] = "FT" ), [Invoices] )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: e37710c7-4497-4f44-9f98-011d68fa09c2
+
+	measure 'Net Sales PY' = CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+		formatString: #,0
+		displayFolder: 04 Vendite
+		lineageTag: 698a215f-6996-410a-8d80-9b48a8ceeced
+
+	measure 'Net Sales YoY %' =
+			VAR _PY = [Net Sales PY]
+			RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [Net Sales] - _PY, _PY ) )
+		formatString: 0.0%
+		displayFolder: 04 Vendite
+		lineageTag: 100212a7-b1e0-4e7a-a6a2-b3a4e7c6ed59
+
+	measure 'Active Customers' = CALCULATE ( DISTINCTCOUNT ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+		formatString: #,0
+		displayFolder: 05 Clienti
+		lineageTag: 840cbe1a-bde6-4a8b-a6dd-168b15add5e6
+
+	measure 'Revenue per Customer' = DIVIDE ( [Net Sales], [Active Customers] )
+		formatString: #,0
+		displayFolder: 05 Clienti
+		lineageTag: 95168996-9ba7-4b53-9529-c9190e663a6e
+
+	measure 'New Customers' =
+			VAR _Start = MIN ( 'Calendar'[Date] )
+			VAR _CustomersInPeriod =
+			    CALCULATETABLE ( VALUES ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+			VAR _CustomersBefore =
+			    CALCULATETABLE (
+			        VALUES ( FactSales[CustomerKey] ),
+			        FactSales[DocumentType] = "FT",
+			        'Calendar'[Date] < _Start,
+			        REMOVEFILTERS ( 'Calendar' )
+			    )
+			RETURN COUNTROWS ( EXCEPT ( _CustomersInPeriod, _CustomersBefore ) )
+		formatString: #,0
+		displayFolder: 05 Clienti
+		lineageTag: 3745b99e-d9a1-4337-9f9a-f5e57aa3918e
+
+	measure 'Lost Customers' =
+			VAR _Start = MIN ( 'Calendar'[Date] )
+			VAR _PrevYear =
+			    CALCULATETABLE (
+			        VALUES ( FactSales[CustomerKey] ),
+			        FactSales[DocumentType] = "FT",
+			        DATESINPERIOD ( 'Calendar'[Date], _Start - 1, -12, MONTH )
+			    )
+			VAR _Current =
+			    CALCULATETABLE ( VALUES ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+			RETURN COUNTROWS ( EXCEPT ( _PrevYear, _Current ) )
+		formatString: #,0
+		displayFolder: 05 Clienti
+		lineageTag: 91a8eaab-3e78-4b0c-9e28-3ba39bb7f345
+
+	measure 'Customer Rank' =
+			IF (
+			    HASONEVALUE ( Customer[CustomerName] ),
+			    RANKX ( ALLSELECTED ( Customer[CustomerName] ), [Net Sales], , DESC, DENSE )
+			)
+		formatString: #,0
+		displayFolder: 05 Clienti
+		lineageTag: f42c644c-f484-41dd-9fd8-3dd4710c60f4
+
+	measure 'Top 10 Customers Share %' =
+			VAR _Top10 = TOPN ( 10, ALLSELECTED ( Customer[CustomerName] ), [Net Sales], DESC )
+			RETURN DIVIDE ( CALCULATE ( [Net Sales], _Top10 ), CALCULATE ( [Net Sales], ALLSELECTED ( Customer ) ) )
+		formatString: 0.0%
+		displayFolder: 05 Clienti
+		lineageTag: ec0a8ddc-8c73-4693-95cb-166a06996cd6
+
+	measure 'Pareto Cumulative %' =
+			VAR _CurrentSales = [Net Sales]
+			VAR _AllCustomers =
+			    ADDCOLUMNS ( ALLSELECTED ( Customer[CustomerName] ), "@Sales", [Net Sales] )
+			VAR _Cumulative =
+			    SUMX ( FILTER ( _AllCustomers, [@Sales] >= _CurrentSales ), [@Sales] )
+			RETURN DIVIDE ( _Cumulative, CALCULATE ( [Net Sales], ALLSELECTED ( Customer ) ) )
+		formatString: 0.0%
+		displayFolder: 05 Clienti
+		lineageTag: f5b01335-58ee-4aa6-a0fc-b304e0941800
+
+	measure 'Revenue Share by Category %' = DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], ALLSELECTED ( Product[ProductCategory] ) ) )
+		formatString: 0.0%
+		displayFolder: 06 Prodotti
+		lineageTag: 52ab7713-07b4-4bf4-9444-ef7a7a6ce06b
+
+	measure 'Avg Net Price' = DIVIDE ( [Net Sales], [Quantity Sold] )
+		formatString: #,0
+		displayFolder: 06 Prodotti
+		lineageTag: bd68dd9c-db86-48c4-8d30-0f1c9dffb00a
+
+	measure 'Avg Std Cost' = DIVIDE ( [Std COGS], [Quantity Sold] )
+		formatString: #,0
+		displayFolder: 06 Prodotti
+		lineageTag: e9872999-ad07-49eb-b270-ed160517aa8d
+
+	measure 'Selected Period Label' =
+			VAR _Min = MIN ( 'Calendar'[Date] )
+			VAR _Max = MAX ( 'Calendar'[Date] )
+			RETURN FORMAT ( _Min, "mmm yyyy" ) & " - " & FORMAT ( _Max, "mmm yyyy" )
+		displayFolder: 07 UI e formattazione
+		lineageTag: 6ea74b21-64c2-47fa-a5c0-df46883c2a50
+
+	measure 'Title P&L' = "Conto economico riclassificato | " & [Selected Period Label]
+		displayFolder: 07 UI e formattazione
+		lineageTag: f92e5c06-ee9c-45c1-8751-fc5afce8a3f9
+
+	measure 'KPI Color YoY' =
+			VAR _v = [YoY Growth %]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _v ), "#8A94A6",
+			        _v >= 0.03, "#1E8E5A",
+			        _v >= 0, "#E0A100",
+			        "#C0392B"
+			    )
+		displayFolder: 07 UI e formattazione
+		lineageTag: df3e94b4-6852-492d-863e-480613bfa45e
+
+	measure 'KPI Color Margin' =
+			VAR _d = [Gross Margin % Delta pp]
+			RETURN IF ( ISBLANK ( _d ), "#8A94A6", IF ( _d >= 0, "#1E8E5A", "#C0392B" ) )
+		displayFolder: 07 UI e formattazione
+		lineageTag: 8fdb9263-d6f3-48c7-b3eb-29424e6a88c6
+
+	column DateKey
+		dataType: int64
+		isHidden
+		lineageTag: 05af8274-98d9-47d8-9791-0d34f1cc48ff
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column AccountKey
+		dataType: int64
+		isHidden
+		lineageTag: 49f66350-6586-4840-b101-5bfd79bc6aae
+		summarizeBy: none
+		sourceColumn: AccountKey
+
+	column CostCenterKey
+		dataType: int64
+		isHidden
+		lineageTag: 2d815172-9eb0-4a4f-9d06-f4ed4c150bb8
+		summarizeBy: none
+		sourceColumn: CostCenterKey
+
+	column SourceSystem
+		dataType: string
+		lineageTag: 0bc16e20-a18c-4ff9-a315-95a5a0fb0976
+		summarizeBy: none
+		sourceColumn: SourceSystem
+
+	column Amount
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 0592c4b8-b934-411e-8d06-2314822ca793
+		summarizeBy: sum
+		sourceColumn: Amount
+
+	column SignedAmount
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 1c51970a-98b4-4e4a-9f55-c313399e546a
+		summarizeBy: sum
+		sourceColumn: SignedAmount
+
+	partition FactPL = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\fact_pl.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"DateKey", Int64.Type}, {"AccountKey", Int64.Type}, {"CostCenterKey", Int64.Type}, {"SourceSystem", type text}, {"Amount", type number}, {"SignedAmount", type number}}, "en-US")
+				in
+				    Typed
+

@@ -1,0 +1,27 @@
+model Model
+	culture: it-IT
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: it-IT
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["TMDLView_Desktop","DevMode"]
+
+annotation PBI_QueryOrder = ["Calendar","Customer","Product","SalesRep","Account","CostCenter","PLLayout","FactSales","FactPL"]
+
+ref table Calendar
+ref table Customer
+ref table Product
+ref table SalesRep
+ref table Account
+ref table CostCenter
+ref table PLLayout
+ref table FactSales
+ref table FactPL
+
+ref cultureInfo it-IT
+

@@ -1,0 +1,39 @@
+table PLLayout
+	lineageTag: 0f89ef66-8823-4efc-8029-edd41c4cee9c
+
+	column PLLineKey
+		dataType: int64
+		isHidden
+		lineageTag: 7c2bec3c-8199-44f1-9bf8-7a07db979808
+		summarizeBy: none
+		sourceColumn: PLLineKey
+
+	column PLLineName
+		dataType: string
+		lineageTag: 8f88f855-d5db-45f1-98af-f7f2e3bb5053
+		summarizeBy: none
+		sourceColumn: PLLineName
+		sortByColumn: SortOrder
+
+	column LineType
+		dataType: string
+		lineageTag: 1b3d6275-7bbd-4384-be31-50dccec5c98a
+		summarizeBy: none
+		sourceColumn: LineType
+
+	column SortOrder
+		dataType: int64
+		lineageTag: 9bd349bc-f5a0-49ee-abdc-1657a5488937
+		summarizeBy: none
+		sourceColumn: SortOrder
+
+	partition PLLayout = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\pl_layout.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"PLLineKey", Int64.Type}, {"PLLineName", type text}, {"LineType", type text}, {"SortOrder", Int64.Type}}, "en-US")
+				in
+				    Typed
+

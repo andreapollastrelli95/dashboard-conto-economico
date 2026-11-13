@@ -1,0 +1,28 @@
+relationship r1
+	fromColumn: FactSales.DateKey
+	toColumn: Calendar.DateKey
+
+relationship r2
+	fromColumn: FactSales.CustomerKey
+	toColumn: Customer.CustomerKey
+
+relationship r3
+	fromColumn: FactSales.ProductKey
+	toColumn: Product.ProductKey
+
+relationship r4
+	fromColumn: FactSales.SalesRepKey
+	toColumn: SalesRep.SalesRepKey
+
+relationship r5
+	fromColumn: FactPL.DateKey
+	toColumn: Calendar.DateKey
+
+relationship r6
+	fromColumn: FactPL.AccountKey
+	toColumn: Account.AccountKey
+
+relationship r7
+	fromColumn: FactPL.CostCenterKey
+	toColumn: CostCenter.CostCenterKey
+

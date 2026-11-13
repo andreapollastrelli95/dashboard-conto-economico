@@ -1,0 +1,32 @@
+table SalesRep
+	lineageTag: f8eb7155-8142-48b0-87de-efea2fdc7a02
+
+	column SalesRepKey
+		dataType: int64
+		isHidden
+		lineageTag: 9f6c6e1e-e0a7-4988-933c-f5042a2408c2
+		summarizeBy: none
+		sourceColumn: SalesRepKey
+
+	column SalesRepName
+		dataType: string
+		lineageTag: c6efa731-95bc-4dc2-9001-b96183e9b3f3
+		summarizeBy: none
+		sourceColumn: SalesRepName
+
+	column SalesArea
+		dataType: string
+		lineageTag: 03d4b929-36f4-4248-acd6-22e60bfad4d7
+		summarizeBy: none
+		sourceColumn: SalesArea
+
+	partition SalesRep = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\sales_rep.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"SalesRepKey", Int64.Type}, {"SalesRepName", type text}, {"SalesArea", type text}}, "en-US")
+				in
+				    Typed
+

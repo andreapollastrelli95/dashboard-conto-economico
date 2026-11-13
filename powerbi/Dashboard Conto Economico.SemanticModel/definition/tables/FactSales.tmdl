@@ -1,0 +1,87 @@
+table FactSales
+	lineageTag: 983d6847-968a-4dbb-93ff-c8d4842e02d7
+
+	column DateKey
+		dataType: int64
+		isHidden
+		lineageTag: 9aa427fe-9da0-4a4b-8e9e-dc9b470376c2
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column CustomerKey
+		dataType: int64
+		isHidden
+		lineageTag: 251be4fc-2d2f-4a68-9491-ef37629cb0c1
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+	column ProductKey
+		dataType: int64
+		isHidden
+		lineageTag: 8669c5f7-7483-4907-afb7-a2e45ba32992
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column SalesRepKey
+		dataType: int64
+		isHidden
+		lineageTag: 8e26a96b-aaa2-44aa-aa3a-c5bf03f3dff4
+		summarizeBy: none
+		sourceColumn: SalesRepKey
+
+	column DocumentNumber
+		dataType: string
+		lineageTag: 4cde1bce-44f7-47b7-ba1d-46bd1a6c5a42
+		summarizeBy: none
+		sourceColumn: DocumentNumber
+
+	column DocumentType
+		dataType: string
+		lineageTag: 9b297a5e-86dc-470b-9509-4c8c2d32824e
+		summarizeBy: none
+		sourceColumn: DocumentType
+
+	column Quantity
+		dataType: int64
+		lineageTag: 77311b71-a239-4f74-9455-234f715d8d86
+		summarizeBy: none
+		sourceColumn: Quantity
+
+	column GrossAmount
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 30c75e97-d7a8-40e9-973f-bee52760c282
+		summarizeBy: sum
+		sourceColumn: GrossAmount
+
+	column DiscountAmount
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 6977a5d4-6093-4860-b9c7-71bd7568f719
+		summarizeBy: sum
+		sourceColumn: DiscountAmount
+
+	column NetAmount
+		dataType: double
+		formatString: #,0.00
+		lineageTag: ac87d739-06f0-4e6a-bf16-3b50ab8e5090
+		summarizeBy: sum
+		sourceColumn: NetAmount
+
+	column COGSAmount
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 6469b3b9-ae10-42a6-ad48-7d81aa60733d
+		summarizeBy: sum
+		sourceColumn: COGSAmount
+
+	partition FactSales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\fact_sales.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"DateKey", Int64.Type}, {"CustomerKey", Int64.Type}, {"ProductKey", Int64.Type}, {"SalesRepKey", Int64.Type}, {"DocumentNumber", type text}, {"DocumentType", type text}, {"Quantity", Int64.Type}, {"GrossAmount", type number}, {"DiscountAmount", type number}, {"NetAmount", type number}, {"COGSAmount", type number}}, "en-US")
+				in
+				    Typed
+

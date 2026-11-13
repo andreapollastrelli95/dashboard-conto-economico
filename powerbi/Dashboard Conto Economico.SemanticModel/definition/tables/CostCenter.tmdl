@@ -1,0 +1,38 @@
+table CostCenter
+	lineageTag: 133c83a7-8cde-40d3-b730-45b113fa5191
+
+	column CostCenterKey
+		dataType: int64
+		isHidden
+		lineageTag: c134251d-9c06-407c-a078-ef22acaca7f5
+		summarizeBy: none
+		sourceColumn: CostCenterKey
+
+	column CostCenterCode
+		dataType: string
+		lineageTag: 03cae29a-cc0b-4d0d-93bf-528103c397a4
+		summarizeBy: none
+		sourceColumn: CostCenterCode
+
+	column CostCenterName
+		dataType: string
+		lineageTag: 81365426-96d1-4058-96d9-caa7e62cea1e
+		summarizeBy: none
+		sourceColumn: CostCenterName
+
+	column CostCenterGroup
+		dataType: string
+		lineageTag: 5df35c1c-235f-486a-bc0b-0982f8b1d5d3
+		summarizeBy: none
+		sourceColumn: CostCenterGroup
+
+	partition CostCenter = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\cost_center.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"CostCenterKey", Int64.Type}, {"CostCenterCode", type text}, {"CostCenterName", type text}, {"CostCenterGroup", type text}}, "en-US")
+				in
+				    Typed
+

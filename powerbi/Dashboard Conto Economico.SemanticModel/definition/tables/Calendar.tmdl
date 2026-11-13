@@ -1,0 +1,76 @@
+table Calendar
+	lineageTag: df6ab404-cad5-4e39-8961-16805da6cb12
+	dataCategory: Time
+
+	column DateKey
+		dataType: int64
+		isHidden
+		lineageTag: 2049809e-6061-426a-beb3-bce83c7d0d8d
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: dd/mm/yyyy
+		lineageTag: 9037ae9b-5f21-4b44-a3ab-46f103fdeeb4
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		lineageTag: 8bc7bcef-f558-481b-9197-3f6f66e67130
+		summarizeBy: none
+		sourceColumn: Year
+
+	column Quarter
+		dataType: string
+		lineageTag: dfaa1a3e-61c6-4200-9ce3-a2a46c66f613
+		summarizeBy: none
+		sourceColumn: Quarter
+
+	column Month
+		dataType: int64
+		lineageTag: 22837a81-c412-4fda-913d-1a73d14e74de
+		summarizeBy: none
+		sourceColumn: Month
+
+	column MonthName
+		dataType: string
+		lineageTag: afc8e288-38b6-451d-a97f-8a1294c935f2
+		summarizeBy: none
+		sourceColumn: MonthName
+		sortByColumn: Month
+
+	column MonthShort
+		dataType: string
+		lineageTag: 1caf425e-6b96-4398-ac85-ba5fb87640d1
+		summarizeBy: none
+		sourceColumn: MonthShort
+		sortByColumn: Month
+
+	column YearMonth
+		dataType: int64
+		lineageTag: f4f1863a-8e2b-4221-8f70-3e2aa0573990
+		summarizeBy: none
+		sourceColumn: YearMonth
+
+	column YearMonthLabel
+		dataType: string
+		lineageTag: dc9c3c73-f3d4-4821-b4e9-ed0cfe4b9c45
+		summarizeBy: none
+		sourceColumn: YearMonthLabel
+		sortByColumn: YearMonth
+
+	partition Calendar = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\calendar.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"DateKey", Int64.Type}, {"Date", type date}, {"Year", Int64.Type}, {"Quarter", type text}, {"Month", Int64.Type}, {"MonthName", type text}, {"MonthShort", type text}, {"YearMonth", Int64.Type}, {"YearMonthLabel", type text}}, "en-US")
+				in
+				    Typed
+

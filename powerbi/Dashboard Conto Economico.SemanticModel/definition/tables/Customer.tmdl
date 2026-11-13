@@ -1,0 +1,62 @@
+table Customer
+	lineageTag: 4b88a3e0-d523-4079-8f2e-2b69c7f6d3be
+
+	column CustomerKey
+		dataType: int64
+		isHidden
+		lineageTag: b82a3ee3-9ff2-49e1-ad58-df405248bb2d
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+	column CustomerCode
+		dataType: string
+		lineageTag: e0a953c4-919b-43c2-aaf6-dbe0b5bc0fe2
+		summarizeBy: none
+		sourceColumn: CustomerCode
+
+	column CustomerName
+		dataType: string
+		lineageTag: 4b16d485-8c66-4486-90c8-25cd2d154330
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+	column CustomerSegment
+		dataType: string
+		lineageTag: 230f54f7-901d-46e2-abe3-36393ef22401
+		summarizeBy: none
+		sourceColumn: CustomerSegment
+
+	column Region
+		dataType: string
+		lineageTag: 3b2b4243-1043-4c27-b69e-6b5bd48ecd3f
+		summarizeBy: none
+		sourceColumn: Region
+
+	column SalesArea
+		dataType: string
+		lineageTag: 9f3282f5-6aba-4444-be38-e43dcc17dd43
+		summarizeBy: none
+		sourceColumn: SalesArea
+
+	column Country
+		dataType: string
+		lineageTag: 7766243a-24e4-41d4-b435-d692f8a40191
+		summarizeBy: none
+		sourceColumn: Country
+
+	column Market
+		dataType: string
+		lineageTag: cdca7ca4-23d3-4efc-a889-d3bf1f431030
+		summarizeBy: none
+		sourceColumn: Market
+
+	partition Customer = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\customer.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"CustomerKey", Int64.Type}, {"CustomerCode", type text}, {"CustomerName", type text}, {"CustomerSegment", type text}, {"Region", type text}, {"SalesArea", type text}, {"Country", type text}, {"Market", type text}}, "en-US")
+				in
+				    Typed
+
