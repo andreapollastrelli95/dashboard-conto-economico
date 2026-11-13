@@ -1,0 +1,15 @@
+AccountCode,AccountName,PLSection,PLSubsection,SortOrder,PLSign
+410000,Ricavi vendite prodotti,Ricavi,Ricavi netti,10,1
+510000,Costo del venduto (costo standard),Costo del venduto,COGS,20,-1
+520000,Varianze di produzione,Costo del venduto,COGS,21,-1
+610000,Personale indiretto e impiegati,Costi operativi,Personale,30,-1
+620000,Consulenze e servizi professionali,Costi operativi,Servizi,31,-1
+621000,Utenze ed energia,Costi operativi,Servizi,32,-1
+622000,Manutenzioni,Costi operativi,Servizi,33,-1
+630000,"Affitti, noleggi e leasing operativi",Costi operativi,Godimento beni di terzi,34,-1
+640000,Trasporti su vendite,Costi operativi,Costi commerciali,35,-1
+641000,Provvigioni agenti,Costi operativi,Costi commerciali,36,-1
+650000,Marketing e fiere,Costi operativi,Costi commerciali,37,-1
+660000,Oneri diversi di gestione,Costi operativi,Altri costi,38,-1
+710000,Ammortamenti immobilizzazioni materiali,Ammortamenti,D&A,50,-1
+720000,Ammortamenti immobilizzazioni immateriali,Ammortamenti,D&A,51,-1

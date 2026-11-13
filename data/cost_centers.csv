@@ -1,0 +1,8 @@
+CostCenterCode,CostCenterName,CostCenterGroup
+CC100,Produzione,Industriale
+CC200,Logistica e magazzino,Industriale
+CC300,Commerciale Italia,Commerciale
+CC310,Commerciale Export,Commerciale
+CC400,Amministrazione e finanza,Generale
+CC500,Ricerca e sviluppo,Generale
+CC600,Direzione generale,Generale

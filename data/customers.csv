@@ -1,0 +1,431 @@
+CustomerID,CustomerCode,CustomerName,CustomerSegment,City,Province,Region,SalesArea,Country,CountryCode,SalesRepID,PaymentTerms,CustomerSince
+1,C10000,Tecno Nord SAS,Manutenzione / End user,,,,Export,Francia,FR,10,RB 60 gg FM,2019-02-18
+2,C10003,Oleodinamica Europa S.n.c.,Distributore,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2020-04-14
+3,C10006,Hydro Veneta S.n.c.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2012-05-08
+4,C10009,Tecno Emiliana Sp. z o.o.,Manutenzione / End user,,,,Export,Polonia,PL,10,RB 60 gg FM,2009-08-30
+5,C10012,Officine Center S.n.c.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2007-04-24
+6,C10015,Ricambi Padana S.r.l.,Distributore,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2011-01-29
+7,C10018,Sistemi Sud S.r.l.,OEM,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2009-03-24
+8,C10021,Hydro Emiliana S.r.l.,Distributore,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2022-04-10
+9,C10024,Meccanica Sud S.p.A.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,5,Bonifico 60 gg DF,2015-05-01
+10,C10027,Trasmissioni Emiliana S.p.A.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,6,RB 120 gg FM,2014-09-17
+11,C10030,Movimento Adriatica S.p.A.,OEM,Verona,VR,Veneto,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2018-09-29
+12,C10033,Impianti Veneta GmbH,OEM,,,,Export,Germania,DE,8,RB 90 gg FM,2021-04-14
+13,C10036,Tecno Service S.p.A.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,5,RB 90 gg FM,2018-08-28
+14,C10039,Sistemi Nord S.r.l.,Manutenzione / End user,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,RB 120 gg FM,2017-08-27
+15,C10042,Costruzioni Sud S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2022-08-27
+16,C10045,Officine Nord S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2020-07-25
+17,C10048,Officine Tech S.r.l.,Manutenzione / End user,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 60 gg DF,2015-06-17
+18,C10051,Tecno Tirrenica S.p.A.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2007-05-03
+19,C10054,Fluid Alpina S.r.l.,OEM,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2014-03-22
+20,C10057,Macchine Lombarda S.r.l.,Distributore,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2011-07-24
+21,C10060,Sistemi Industriale B.V.,Distributore,,,,Export,Paesi Bassi,NL,8,RB 60 gg FM,2005-01-05
+22,C10063,Impianti Padana S.r.l.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2015-12-13
+23,C10066,Costruzioni Lombarda S.L.,Manutenzione / End user,,,,Export,Spagna,ES,9,RB 90 gg FM,2022-05-07
+24,C10069,Trasmissioni Service S.r.l.,Distributore,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2019-08-12
+25,C10072,Macchine Padana S.p.A.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,5,RB 60 gg FM,2008-03-04
+26,C10075,Hydro Tech S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2014-01-25
+27,C10078,Fluid Sud GmbH,OEM,,,,Export,Austria,AT,10,RB 60 gg FM,2006-11-02
+28,C10081,Ricambi Nord S.p.A.,OEM,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2007-08-21
+29,C10084,Oleodinamica Tirrenica S.p.A.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2021-10-25
+30,C10087,Macchine Emiliana GmbH,Distributore,,,,Export,Germania,DE,10,RB 60 gg FM,2005-07-16
+31,C10090,Tecno Sud S.n.c.,Distributore,Arezzo,AR,Toscana,Centro,Italia,IT,5,RB 60 gg FM,2007-10-21
+32,C10093,Meccanica Nord S.p.A.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2012-11-22
+33,C10096,Macchine Group S.p.A.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,5,RB 120 gg FM,2016-08-29
+34,C10099,Impianti Alpina S.r.l.,OEM,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 60 gg FM,2013-05-13
+35,C10102,Hydro Tirrenica S.r.l.,OEM,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2021-12-08
+36,C10105,Idraulica Adriatica S.p.A.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2008-06-17
+37,C10108,Movimento Italia S.p.A.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2020-01-04
+38,C10111,Officine Veneta S.p.A.,Manutenzione / End user,Firenze,FI,Toscana,Centro,Italia,IT,5,RB 90 gg FM,2012-04-07
+39,C10114,Movimento Italia GmbH,Distributore,,,,Export,Austria,AT,8,Bonifico 60 gg DF,2019-06-09
+40,C10117,Hydro Italia GmbH,Distributore,,,,Export,Germania,DE,10,RB 90 gg FM,2019-10-03
+41,C10120,Sistemi Toscana S.n.c.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2007-03-19
+42,C10123,Movimento Veneta S.p.A.,Manutenzione / End user,Verona,VR,Veneto,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2006-05-25
+43,C10126,Sistemi Padana S.n.c.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2006-08-24
+44,C10129,Costruzioni Sud S.n.c.,Distributore,Prato,PO,Toscana,Centro,Italia,IT,6,RB 60 gg FM,2020-04-19
+45,C10132,Oleodinamica Lombarda S.r.l.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,6,RB 60 gg FM,2006-11-10
+46,C10135,Hydro Padana S.r.l.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2015-09-21
+47,C10138,Oleodinamica Padana S.L.,Manutenzione / End user,,,,Export,Spagna,ES,9,RB 90 gg FM,2008-03-14
+48,C10141,Costruzioni Lombarda S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2011-05-10
+49,C10144,Hydro Lombarda S.r.l.,Distributore,Padova,PD,Veneto,Nord-Est,Italia,IT,4,RB 60 gg FM,2017-02-05
+50,C10147,Idraulica Tech S.p.A.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2021-07-01
+51,C10150,Oleodinamica Toscana S.n.c.,OEM,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2020-12-21
+52,C10153,Impianti Adriatica GmbH,Distributore,,,,Export,Austria,AT,8,RB 90 gg FM,2006-01-08
+53,C10156,Ricambi Group S.n.c.,OEM,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 60 gg FM,2021-06-05
+54,C10159,Fluid Tech S.n.c.,OEM,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2008-05-14
+55,C10162,Movimento Lombarda S.r.l.,OEM,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 120 gg FM,2021-04-08
+56,C10165,Costruzioni Center A.S.,Manutenzione / End user,,,,Export,Turchia,TR,10,Bonifico 60 gg DF,2016-05-25
+57,C10168,Ricambi Nord S.r.l.,Manutenzione / End user,Firenze,FI,Toscana,Centro,Italia,IT,6,Bonifico 30 gg,2008-08-31
+58,C10171,Hydro Nord S.n.c.,Distributore,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,RB 90 gg FM,2020-01-07
+59,C10174,Movimento Emiliana S.r.l.,Manutenzione / End user,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 90 gg FM,2022-04-23
+60,C10177,Officine Padana S.p.A.,Distributore,Padova,PD,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2015-12-08
+61,C10180,Movimento Europa GmbH,OEM,,,,Export,Austria,AT,10,Bonifico 60 gg DF,2020-12-22
+62,C10183,Macchine Veneta GmbH,Manutenzione / End user,,,,Export,Germania,DE,9,RB 90 gg FM,2005-04-30
+63,C10186,Meccanica Emiliana GmbH,OEM,,,,Export,Germania,DE,9,RB 90 gg FM,2014-03-12
+64,C10189,Idraulica Lombarda S.L.,Distributore,,,,Export,Spagna,ES,10,Bonifico 60 gg DF,2015-08-25
+65,C10192,Trasmissioni Center S.L.,Distributore,,,,Export,Spagna,ES,8,RB 60 gg FM,2012-12-14
+66,C10195,Ricambi Center S.r.l.,Distributore,Perugia,PG,Umbria,Centro,Italia,IT,6,RB 120 gg FM,2022-05-12
+67,C10198,Trasmissioni Tech S.r.l.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2006-02-06
+68,C10201,Trasmissioni Center S.r.l.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,6,RB 90 gg FM,2013-04-03
+69,C10204,Idraulica Emiliana GmbH,Manutenzione / End user,,,,Export,Germania,DE,10,Bonifico 30 gg,2008-06-15
+70,C10207,Officine Toscana S.n.c.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2005-01-17
+71,C10210,Meccanica Veneta GmbH,Distributore,,,,Export,Germania,DE,8,RB 60 gg FM,2019-09-04
+72,C10213,Hydro Sud Sp. z o.o.,OEM,,,,Export,Polonia,PL,10,RB 60 gg FM,2016-10-11
+73,C10216,Officine Italia S.r.l.,OEM,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2013-03-06
+74,C10219,Ricambi Service S.r.l.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2009-01-18
+75,C10222,Trasmissioni Veneta S.r.l.,Distributore,Arezzo,AR,Toscana,Centro,Italia,IT,6,RB 90 gg FM,2022-09-17
+76,C10225,Agri Tirrenica S.r.l.,OEM,Arezzo,AR,Toscana,Centro,Italia,IT,6,RB 90 gg FM,2017-02-26
+77,C10228,Officine Alpina GmbH,Manutenzione / End user,,,,Export,Germania,DE,9,RB 90 gg FM,2009-07-05
+78,C10231,Idraulica Tech S.r.l.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2009-05-10
+79,C10234,Officine Toscana S.r.l.,OEM,Salerno,SA,Campania,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2008-11-03
+80,C10237,Oleodinamica Veneta S.n.c.,Manutenzione / End user,Roma,RM,Lazio,Centro,Italia,IT,5,RB 90 gg FM,2016-02-06
+81,C10240,Meccanica Emiliana S.r.l.,OEM,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2005-02-10
+82,C10243,Ricambi Emiliana S.r.l.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2019-10-08
+83,C10246,Meccanica Tirrenica S.p.A.,Distributore,Ancona,AN,Marche,Centro,Italia,IT,6,RB 60 gg FM,2006-11-27
+84,C10249,Tecno Service S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,Bonifico 60 gg DF,2016-01-31
+85,C10252,Impianti Group S.r.l.,OEM,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 120 gg FM,2022-04-13
+86,C10255,Impianti Center Sp. z o.o.,Manutenzione / End user,,,,Export,Polonia,PL,9,Bonifico 60 gg DF,2022-06-18
+87,C10258,Hydro Sud S.r.l.,Manutenzione / End user,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2012-03-17
+88,C10261,Agri Lombarda S.p.A.,Distributore,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 60 gg FM,2016-01-16
+89,C10264,Macchine Service S.n.c.,Distributore,Salerno,SA,Campania,Sud e Isole,Italia,IT,7,RB 60 gg FM,2005-07-24
+90,C10267,Sistemi Padana S.r.l.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2010-03-03
+91,C10270,Idraulica Alpina S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2011-05-13
+92,C10273,Meccanica Industriale GmbH,Distributore,,,,Export,Germania,DE,10,RB 90 gg FM,2022-10-07
+93,C10276,Hydro Lombarda SAS,Distributore,,,,Export,Francia,FR,10,Bonifico 30 gg,2021-10-11
+94,C10279,Movimento Alpina S.n.c.,OEM,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,Bonifico 30 gg,2008-06-29
+95,C10282,Sistemi Tirrenica S.n.c.,OEM,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2016-09-29
+96,C10285,Meccanica Center S.p.A.,Distributore,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2019-09-17
+97,C10288,Macchine Tirrenica S.p.A.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2013-05-25
+98,C10291,Ricambi Group S.p.A.,Manutenzione / End user,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,RB 120 gg FM,2006-06-17
+99,C10294,Trasmissioni Adriatica S.r.l.,OEM,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2018-03-30
+100,C10297,Officine Europa B.V.,Manutenzione / End user,,,,Export,Paesi Bassi,NL,8,RB 60 gg FM,2016-01-21
+101,C10300,Hydro Nord S.p.A.,OEM,Roma,RM,Lazio,Centro,Italia,IT,5,Bonifico 60 gg DF,2011-09-28
+102,C10303,Impianti Sud S.p.A.,OEM,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2010-08-28
+103,C10306,Movimento Veneta S.r.l.,Manutenzione / End user,Padova,PD,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2007-03-13
+104,C10309,Ricambi Adriatica B.V.,OEM,,,,Export,Paesi Bassi,NL,9,RB 60 gg FM,2017-10-13
+105,C10312,Ricambi Tech S.n.c.,Distributore,Perugia,PG,Umbria,Centro,Italia,IT,6,Bonifico 30 gg,2006-03-10
+106,C10315,Oleodinamica Padana S.R.L.,Manutenzione / End user,,,,Export,Romania,RO,8,Bonifico 30 gg,2006-11-24
+107,C10318,Agri Sud S.p.A.,OEM,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 120 gg FM,2015-08-30
+108,C10321,Costruzioni Tirrenica S.n.c.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2010-09-19
+109,C10324,Meccanica Sud S.r.l.,Manutenzione / End user,Roma,RM,Lazio,Centro,Italia,IT,5,Bonifico 60 gg DF,2011-09-09
+110,C10327,Oleodinamica Industriale S.p.A.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,5,RB 60 gg FM,2008-05-12
+111,C10330,Officine Europa S.p.A.,Manutenzione / End user,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,RB 60 gg FM,2014-03-02
+112,C10333,Sistemi Tirrenica S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2013-10-24
+113,C10336,Ricambi Emiliana S.p.A.,OEM,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2017-03-22
+114,C10339,Idraulica Italia S.L.,Distributore,,,,Export,Spagna,ES,8,RB 60 gg FM,2020-03-27
+115,C10342,Meccanica Service S.r.l.,Distributore,Catania,CT,Sicilia,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2010-10-03
+116,C10345,Idraulica Italia Sp. z o.o.,OEM,,,,Export,Polonia,PL,9,RB 90 gg FM,2006-12-03
+117,C10348,Meccanica Toscana S.r.l.,Distributore,Ancona,AN,Marche,Centro,Italia,IT,5,RB 90 gg FM,2018-07-14
+118,C10351,Oleodinamica Toscana S.r.l.,Distributore,Catania,CT,Sicilia,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2017-03-13
+119,C10354,Tecno Padana S.r.l.,OEM,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2005-04-13
+120,C10357,Idraulica Center S.p.A.,OEM,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 90 gg FM,2009-03-10
+121,C10360,Impianti Industriale S.n.c.,Distributore,Padova,PD,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2005-11-30
+122,C10363,Movimento Padana S.r.l.,Distributore,Perugia,PG,Umbria,Centro,Italia,IT,6,Bonifico 30 gg,2011-07-14
+123,C10366,Macchine Industriale S.r.l.,Distributore,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 90 gg FM,2016-05-11
+124,C10369,Ricambi Tirrenica B.V.,OEM,,,,Export,Paesi Bassi,NL,9,RB 120 gg FM,2014-04-16
+125,C10372,Hydro Adriatica S.n.c.,Manutenzione / End user,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 120 gg FM,2017-10-08
+126,C10375,Officine Industriale S.n.c.,Distributore,Ancona,AN,Marche,Centro,Italia,IT,5,Bonifico 60 gg DF,2010-12-07
+127,C10378,Movimento Group S.n.c.,Manutenzione / End user,Verona,VR,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2015-10-16
+128,C10381,Fluid Emiliana S.r.l.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,5,RB 60 gg FM,2016-07-10
+129,C10384,Trasmissioni Nord S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,Bonifico 60 gg DF,2018-11-28
+130,C10387,Macchine Sud GmbH,OEM,,,,Export,Germania,DE,8,RB 120 gg FM,2015-07-21
+131,C10390,Impianti Sud GmbH,OEM,,,,Export,Germania,DE,9,RB 120 gg FM,2014-11-18
+132,C10393,Tecno Toscana S.r.l.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2010-05-17
+133,C10396,Idraulica Center S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2011-01-12
+134,C10399,Ricambi Italia S.n.c.,Distributore,Perugia,PG,Umbria,Centro,Italia,IT,5,RB 90 gg FM,2010-05-24
+135,C10402,Oleodinamica Nord S.r.l.,OEM,Prato,PO,Toscana,Centro,Italia,IT,5,RB 90 gg FM,2011-03-15
+136,C10405,Tecno Alpina SAS,Distributore,,,,Export,Francia,FR,9,RB 90 gg FM,2016-08-17
+137,C10408,Costruzioni Adriatica S.r.l.,OEM,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,Bonifico 30 gg,2011-01-06
+138,C10411,Sistemi Group S.r.l.,Distributore,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2006-02-15
+139,C10414,Movimento Tech S.r.l.,Distributore,Prato,PO,Toscana,Centro,Italia,IT,6,RB 60 gg FM,2012-03-17
+140,C10417,Hydro Sud S.n.c.,OEM,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2022-04-23
+141,C10420,Impianti Tirrenica S.n.c.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2018-03-20
+142,C10423,Sistemi Lombarda S.r.l.,OEM,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2016-05-17
+143,C10426,Meccanica Lombarda S.p.A.,OEM,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 90 gg FM,2015-10-28
+144,C10429,Macchine Toscana GmbH,Manutenzione / End user,,,,Export,Austria,AT,10,RB 60 gg FM,2013-05-07
+145,C10432,Movimento Emiliana S.L.,Manutenzione / End user,,,,Export,Spagna,ES,10,RB 90 gg FM,2012-11-10
+146,C10435,Oleodinamica Toscana GmbH,Manutenzione / End user,,,,Export,Austria,AT,9,RB 90 gg FM,2020-11-22
+147,C10438,Costruzioni Group S.r.l.,Distributore,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2018-08-23
+148,C10441,Officine Lombarda S.r.l.,Manutenzione / End user,Padova,PD,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2016-12-27
+149,C10444,Idraulica Lombarda S.r.l.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,5,RB 60 gg FM,2009-09-30
+150,C10447,Macchine Nord S.r.l.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2007-08-04
+151,C10450,Trasmissioni Emiliana S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2019-09-07
+152,C10453,Macchine Alpina S.r.l.,Distributore,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 120 gg FM,2008-10-12
+153,C10456,Sistemi Group S.p.A.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2013-08-30
+154,C10459,Agri Industriale S.n.c.,Manutenzione / End user,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2011-08-28
+155,C10462,Impianti Emiliana S.r.l.,Distributore,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 90 gg FM,2005-09-24
+156,C10465,Movimento Emiliana S.p.A.,Distributore,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2020-08-16
+157,C10468,Sistemi Tech S.p.A.,OEM,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2011-10-25
+158,C10471,Ricambi Industriale S.n.c.,Manutenzione / End user,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2009-08-17
+159,C10474,Tecno Toscana GmbH,Distributore,,,,Export,Germania,DE,10,RB 90 gg FM,2021-06-04
+160,C10477,Meccanica Italia GmbH,OEM,,,,Export,Germania,DE,9,Bonifico 30 gg,2012-01-13
+161,C10480,Tecno Padana S.n.c.,Manutenzione / End user,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 90 gg FM,2012-04-12
+162,C10483,Trasmissioni Lombarda S.n.c.,Manutenzione / End user,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2017-12-23
+163,C10486,Oleodinamica Industriale S.r.l.,Manutenzione / End user,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 90 gg FM,2019-12-25
+164,C10489,Hydro Industriale S.r.l.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,6,RB 90 gg FM,2012-06-09
+165,C10492,Costruzioni Tech S.r.l.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,5,Bonifico 30 gg,2008-08-26
+166,C10495,Trasmissioni Europa S.r.l.,Manutenzione / End user,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2017-08-19
+167,C10498,Ricambi Service S.n.c.,OEM,Salerno,SA,Campania,Sud e Isole,Italia,IT,7,RB 90 gg FM,2018-12-29
+168,C10501,Fluid Padana S.r.l.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,6,RB 90 gg FM,2022-01-11
+169,C10504,Ricambi Italia GmbH,Distributore,,,,Export,Germania,DE,10,RB 90 gg FM,2006-02-22
+170,C10507,Sistemi Italia S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2009-08-18
+171,C10510,Hydro Padana S.L.,Distributore,,,,Export,Spagna,ES,8,RB 90 gg FM,2020-04-21
+172,C10513,Fluid Toscana S.r.l.,OEM,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2021-03-29
+173,C10516,Agri Center GmbH,OEM,,,,Export,Germania,DE,8,Bonifico 30 gg,2009-12-03
+174,C10519,Impianti Toscana S.r.l.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2021-04-05
+175,C10522,Oleodinamica Alpina S.n.c.,Distributore,Perugia,PG,Umbria,Centro,Italia,IT,6,Bonifico 30 gg,2022-04-13
+176,C10525,Fluid Tirrenica S.n.c.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 120 gg FM,2014-12-28
+177,C10528,Idraulica Tirrenica S.r.l.,OEM,Arezzo,AR,Toscana,Centro,Italia,IT,5,Bonifico 60 gg DF,2009-09-25
+178,C10531,Trasmissioni Industriale S.r.l.,OEM,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2016-10-15
+179,C10534,Costruzioni Industriale S.r.l.,OEM,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,Bonifico 30 gg,2009-05-27
+180,C10537,Tecno Tirrenica SAS,Manutenzione / End user,,,,Export,Francia,FR,10,RB 60 gg FM,2007-11-19
+181,C10540,Sistemi Center S.r.l.,Manutenzione / End user,Catania,CT,Sicilia,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2015-03-07
+182,C10543,Officine Group S.r.l.,Manutenzione / End user,Firenze,FI,Toscana,Centro,Italia,IT,6,Bonifico 30 gg,2010-11-13
+183,C10546,Oleodinamica Veneta S.r.l.,OEM,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,1,RB 120 gg FM,2010-08-07
+184,C10549,Trasmissioni Padana S.r.l.,Manutenzione / End user,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2018-07-08
+185,C10552,Trasmissioni Italia S.n.c.,Distributore,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,RB 90 gg FM,2005-09-03
+186,C10555,Agri Center S.r.l.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2010-04-18
+187,C10558,Officine Europa GmbH,Distributore,,,,Export,Germania,DE,10,RB 90 gg FM,2018-10-09
+188,C10561,Meccanica Padana Sp. z o.o.,Manutenzione / End user,,,,Export,Polonia,PL,10,Bonifico 60 gg DF,2013-08-10
+189,C10564,Fluid Adriatica S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2016-10-22
+190,C10567,Hydro Nord S.r.l.,Distributore,Verona,VR,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2020-11-27
+191,C10570,Tecno Alpina S.p.A.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2008-03-07
+192,C10573,Ricambi Veneta S.r.l.,OEM,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2018-02-17
+193,C10576,Officine Europa S.n.c.,Manutenzione / End user,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 60 gg FM,2011-06-09
+194,C10579,Oleodinamica Tirrenica S.n.c.,Distributore,Salerno,SA,Campania,Sud e Isole,Italia,IT,7,RB 60 gg FM,2009-01-15
+195,C10582,Impianti Tech GmbH,Distributore,,,,Export,Austria,AT,10,RB 90 gg FM,2009-02-22
+196,C10585,Fluid Italia S.r.l.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2017-03-27
+197,C10588,Tecno Industriale S.n.c.,Distributore,Perugia,PG,Umbria,Centro,Italia,IT,5,Bonifico 30 gg,2005-01-10
+198,C10591,Fluid Italia S.n.c.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,5,RB 120 gg FM,2015-10-16
+199,C10594,Movimento Italia S.r.l.,OEM,Verona,VR,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2009-02-28
+200,C10597,Hydro Center S.n.c.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2013-01-01
+201,C10600,Idraulica Europa S.r.l.,Manutenzione / End user,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2014-03-04
+202,C10603,Sistemi Toscana GmbH,Distributore,,,,Export,Austria,AT,10,RB 90 gg FM,2021-09-12
+203,C10606,Costruzioni Tech S.n.c.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2022-01-18
+204,C10609,Oleodinamica Service S.p.A.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2012-12-23
+205,C10612,Hydro Group S.n.c.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2010-08-17
+206,C10615,Sistemi Toscana S.p.A.,Distributore,Verona,VR,Veneto,Nord-Est,Italia,IT,3,Bonifico 30 gg,2020-11-07
+207,C10618,Meccanica Adriatica S.p.A.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2014-04-22
+208,C10621,Tecno Nord Sp. z o.o.,Manutenzione / End user,,,,Export,Polonia,PL,9,Bonifico 30 gg,2018-12-13
+209,C10624,Hydro Veneta S.r.l.,OEM,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2011-11-07
+210,C10627,Impianti Adriatica S.r.l.,Distributore,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 90 gg FM,2017-02-14
+211,C10630,Sistemi Center S.n.c.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 120 gg FM,2014-05-19
+212,C10633,Macchine Veneta S.r.l.,Manutenzione / End user,Catania,CT,Sicilia,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2016-09-26
+213,C10636,Fluid Padana S.n.c.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2010-04-04
+214,C10639,Oleodinamica Emiliana S.r.l.,Manutenzione / End user,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2015-07-25
+215,C10642,Sistemi Industriale S.n.c.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2014-07-24
+216,C10645,Macchine Emiliana S.p.A.,Distributore,Arezzo,AR,Toscana,Centro,Italia,IT,5,Bonifico 30 gg,2012-10-20
+217,C10648,Impianti Tech S.p.A.,Manutenzione / End user,Padova,PD,Veneto,Nord-Est,Italia,IT,4,RB 60 gg FM,2009-02-11
+218,C10651,Ricambi Alpina S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2012-08-21
+219,C10654,Costruzioni Italia S.r.l.,OEM,Verona,VR,Veneto,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2018-01-03
+220,C10657,Idraulica Sud S.n.c.,OEM,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,Bonifico 30 gg,2020-09-03
+221,C10660,Hydro Emiliana S.n.c.,Manutenzione / End user,Roma,RM,Lazio,Centro,Italia,IT,6,RB 90 gg FM,2012-06-07
+222,C10663,Tecno Nord S.r.l.,Distributore,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2005-11-07
+223,C10666,Officine Lombarda GmbH,Distributore,,,,Export,Germania,DE,8,Bonifico 60 gg DF,2015-10-30
+224,C10669,Oleodinamica Industriale S.n.c.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,5,RB 120 gg FM,2005-10-29
+225,C10672,Officine Center S.r.l.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2021-11-12
+226,C10675,Idraulica Emiliana S.r.l.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2013-09-18
+227,C10678,Oleodinamica Lombarda S.p.A.,OEM,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2005-03-14
+228,C10681,Ricambi Lombarda S.r.l.,Distributore,Firenze,FI,Toscana,Centro,Italia,IT,5,RB 60 gg FM,2014-03-28
+229,C10684,Agri Lombarda Sp. z o.o.,Manutenzione / End user,,,,Export,Polonia,PL,8,Bonifico 30 gg,2006-03-12
+230,C10687,Tecno Europa S.p.A.,Distributore,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 60 gg FM,2013-10-03
+231,C10690,Hydro Italia S.r.l.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 120 gg FM,2014-01-29
+232,C10693,Fluid Tech S.r.l.,Distributore,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2008-01-27
+233,C10696,Oleodinamica Adriatica S.n.c.,OEM,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2006-03-09
+234,C10699,Trasmissioni Adriatica S.n.c.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2010-10-22
+235,C10702,Officine Italia S.L.,Manutenzione / End user,,,,Export,Spagna,ES,10,RB 60 gg FM,2006-03-08
+236,C10705,Movimento Service B.V.,Distributore,,,,Export,Paesi Bassi,NL,9,Bonifico 30 gg,2019-03-02
+237,C10708,Officine Alpina B.V.,Distributore,,,,Export,Paesi Bassi,NL,10,RB 90 gg FM,2021-09-03
+238,C10711,Officine Group SAS,Manutenzione / End user,,,,Export,Francia,FR,10,RB 60 gg FM,2017-06-28
+239,C10714,Macchine Nord S.p.A.,Manutenzione / End user,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2015-08-10
+240,C10717,Idraulica Veneta S.r.l.,OEM,Salerno,SA,Campania,Sud e Isole,Italia,IT,7,RB 90 gg FM,2019-12-19
+241,C10720,Trasmissioni Lombarda S.r.l.,Distributore,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2019-10-14
+242,C10723,Tecno Center S.n.c.,OEM,Firenze,FI,Toscana,Centro,Italia,IT,6,RB 60 gg FM,2015-09-26
+243,C10726,Trasmissioni Veneta S.n.c.,Distributore,Verona,VR,Veneto,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2005-01-10
+244,C10729,Macchine Europa S.r.l.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,6,RB 60 gg FM,2015-05-01
+245,C10732,Agri Sud S.n.c.,OEM,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2010-12-21
+246,C10735,Ricambi Tirrenica S.p.A.,Distributore,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 60 gg FM,2012-12-12
+247,C10738,Sistemi Center S.p.A.,Distributore,Verona,VR,Veneto,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2015-05-05
+248,C10741,Idraulica Veneta S.p.A.,OEM,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,4,Bonifico 30 gg,2009-06-20
+249,C10744,Oleodinamica Group S.p.A.,OEM,Arezzo,AR,Toscana,Centro,Italia,IT,6,Bonifico 30 gg,2008-05-29
+250,C10747,Idraulica Sud S.r.l.,Manutenzione / End user,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2009-03-07
+251,C10750,Macchine Emiliana S.r.l.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2013-11-14
+252,C10753,Tecno Center GmbH,OEM,,,,Export,Germania,DE,9,Bonifico 30 gg,2016-04-06
+253,C10756,Trasmissioni Sud S.r.l.,Manutenzione / End user,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,RB 60 gg FM,2017-03-09
+254,C10759,Macchine Tirrenica S.r.l.,Manutenzione / End user,Roma,RM,Lazio,Centro,Italia,IT,5,RB 120 gg FM,2019-06-17
+255,C10762,Agri Lombarda S.r.l.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2013-08-19
+256,C10765,Idraulica Service S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2014-06-25
+257,C10768,Idraulica Nord S.r.l.,Manutenzione / End user,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2020-11-20
+258,C10771,Ricambi Tirrenica S.r.l.,Distributore,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 60 gg DF,2011-04-20
+259,C10774,Oleodinamica Adriatica S.p.A.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 60 gg FM,2020-11-07
+260,C10777,Costruzioni Padana S.n.c.,OEM,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2014-05-20
+261,C10780,Meccanica Lombarda GmbH,Manutenzione / End user,,,,Export,Austria,AT,10,Bonifico 30 gg,2019-09-04
+262,C10783,Meccanica Nord S.r.l.,Distributore,Catania,CT,Sicilia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2021-02-13
+263,C10786,Agri Tech S.L.,Distributore,,,,Export,Spagna,ES,10,RB 90 gg FM,2019-05-19
+264,C10789,Macchine Tech S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2020-11-08
+265,C10792,Costruzioni Industriale S.p.A.,Distributore,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 60 gg DF,2015-02-01
+266,C10795,Fluid Emiliana S.n.c.,OEM,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2018-09-08
+267,C10798,Meccanica Lombarda S.r.l.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2011-12-10
+268,C10801,Sistemi Veneta S.r.l.,Distributore,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2018-12-07
+269,C10804,Hydro Europa S.p.A.,Manutenzione / End user,Roma,RM,Lazio,Centro,Italia,IT,6,RB 90 gg FM,2005-12-26
+270,C10807,Hydro Padana S.n.c.,Manutenzione / End user,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2005-03-08
+271,C10810,Fluid Veneta S.r.l.,Distributore,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2012-12-02
+272,C10813,Trasmissioni Tirrenica S.p.A.,OEM,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 90 gg FM,2018-07-10
+273,C10816,Sistemi Alpina S.p.A.,Manutenzione / End user,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2016-11-30
+274,C10819,Impianti Europa S.r.l.,Manutenzione / End user,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2011-07-25
+275,C10822,Meccanica Industriale S.r.l.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,6,Bonifico 60 gg DF,2017-08-24
+276,C10825,Officine Lombarda S.p.A.,OEM,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2020-01-23
+277,C10828,Ricambi Lombarda S.R.L.,Manutenzione / End user,,,,Export,Romania,RO,8,RB 60 gg FM,2011-08-28
+278,C10831,Oleodinamica Tirrenica S.r.l.,Distributore,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2017-08-31
+279,C10834,Oleodinamica Padana S.r.l.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2005-09-28
+280,C10837,Movimento Nord S.r.l.,Manutenzione / End user,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2021-06-20
+281,C10840,Impianti Sud S.r.l.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,5,RB 90 gg FM,2012-11-16
+282,C10843,Agri Service S.r.l.,OEM,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2014-07-07
+283,C10846,Agri Toscana S.r.l.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,5,RB 120 gg FM,2017-08-04
+284,C10849,Impianti Tirrenica S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2021-11-19
+285,C10852,Tecno Sud S.p.A.,Distributore,Salerno,SA,Campania,Sud e Isole,Italia,IT,7,RB 60 gg FM,2006-03-27
+286,C10855,Agri Industriale S.r.l.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,6,RB 120 gg FM,2013-08-10
+287,C10858,Movimento Industriale S.r.l.,Distributore,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2014-04-24
+288,C10861,Tecno Tech S.r.l.,Manutenzione / End user,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2016-04-02
+289,C10864,Impianti Service S.r.l.,OEM,Padova,PD,Veneto,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2017-07-10
+290,C10867,Movimento Toscana S.r.l.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 120 gg FM,2010-12-02
+291,C10870,Trasmissioni Tirrenica S.r.l.,Manutenzione / End user,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,3,RB 120 gg FM,2009-12-27
+292,C10873,Macchine Service S.p.A.,Distributore,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2015-09-28
+293,C10876,Impianti Adriatica S.p.A.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 120 gg FM,2008-07-30
+294,C10879,Fluid Sud S.n.c.,OEM,Arezzo,AR,Toscana,Centro,Italia,IT,5,RB 60 gg FM,2015-12-29
+295,C10882,Agri Padana S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2017-02-18
+296,C10885,Tecno Service GmbH,Distributore,,,,Export,Germania,DE,8,RB 60 gg FM,2018-07-30
+297,C10888,Agri Italia S.r.l.,Distributore,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2017-06-30
+298,C10891,Macchine Service GmbH,Manutenzione / End user,,,,Export,Austria,AT,8,RB 90 gg FM,2013-05-15
+299,C10894,Oleodinamica Group S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2011-10-28
+300,C10897,Hydro Adriatica S.r.l.,Manutenzione / End user,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2008-01-30
+301,C10900,Hydro Italia S.L.,OEM,,,,Export,Spagna,ES,10,RB 90 gg FM,2013-11-03
+302,C10903,Hydro Emiliana GmbH,Distributore,,,,Export,Germania,DE,9,RB 60 gg FM,2020-10-02
+303,C10906,Oleodinamica Italia S.r.l.,Manutenzione / End user,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2014-02-18
+304,C10909,Macchine Europa GmbH,Distributore,,,,Export,Austria,AT,8,RB 60 gg FM,2021-10-03
+305,C10912,Hydro Toscana S.n.c.,Distributore,Padova,PD,Veneto,Nord-Est,Italia,IT,4,RB 60 gg FM,2009-11-04
+306,C10915,Costruzioni Nord S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2011-03-25
+307,C10918,Impianti Group S.p.A.,Distributore,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 90 gg FM,2017-07-19
+308,C10921,Trasmissioni Service Sp. z o.o.,Distributore,,,,Export,Polonia,PL,9,RB 90 gg FM,2014-03-02
+309,C10924,Costruzioni Italia S.p.A.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 120 gg FM,2019-06-19
+310,C10927,Movimento Alpina S.r.l.,OEM,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 90 gg FM,2022-01-03
+311,C10930,Meccanica Nord S.n.c.,Distributore,Catania,CT,Sicilia,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2015-08-25
+312,C10933,Sistemi Industriale S.r.l.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,6,RB 90 gg FM,2021-10-05
+313,C10936,Agri Group S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2016-12-08
+314,C10939,Ricambi Service GmbH,OEM,,,,Export,Germania,DE,8,Bonifico 30 gg,2010-01-20
+315,C10942,Tecno Europa GmbH,Manutenzione / End user,,,,Export,Germania,DE,8,Bonifico 60 gg DF,2018-05-01
+316,C10945,Meccanica Service GmbH,Manutenzione / End user,,,,Export,Germania,DE,8,RB 90 gg FM,2008-05-14
+317,C10948,Tecno Alpina GmbH,Distributore,,,,Export,Germania,DE,9,RB 90 gg FM,2009-08-30
+318,C10951,Trasmissioni Alpina S.r.l.,Manutenzione / End user,Verona,VR,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2015-05-11
+319,C10954,Ricambi Emiliana GmbH,OEM,,,,Export,Germania,DE,8,Bonifico 60 gg DF,2012-04-03
+320,C10957,Officine Europa S.r.l.,Manutenzione / End user,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2014-12-24
+321,C10960,Macchine Italia S.r.l.,Distributore,Ancona,AN,Marche,Centro,Italia,IT,5,RB 90 gg FM,2007-05-22
+322,C10963,Sistemi Tirrenica SAS,Manutenzione / End user,,,,Export,Francia,FR,8,RB 90 gg FM,2009-04-19
+323,C10966,Macchine Center S.r.l.,OEM,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,RB 120 gg FM,2021-04-25
+324,C10969,Sistemi Emiliana S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2018-04-09
+325,C10972,Oleodinamica Sud S.p.A.,OEM,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2021-01-21
+326,C10975,Hydro Service S.r.l.,Distributore,Ancona,AN,Marche,Centro,Italia,IT,6,RB 60 gg FM,2008-01-06
+327,C10978,Hydro Center GmbH,Manutenzione / End user,,,,Export,Germania,DE,9,Bonifico 60 gg DF,2015-02-04
+328,C10981,Fluid Industriale S.p.A.,Manutenzione / End user,Firenze,FI,Toscana,Centro,Italia,IT,6,Bonifico 30 gg,2019-05-11
+329,C10984,Meccanica Service SAS,Distributore,,,,Export,Francia,FR,8,Bonifico 30 gg,2020-10-25
+330,C10987,Movimento Alpina SAS,OEM,,,,Export,Francia,FR,8,RB 90 gg FM,2014-05-02
+331,C10990,Movimento Tech S.p.A.,Distributore,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2014-12-11
+332,C10993,Tecno Veneta S.r.l.,OEM,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2018-06-02
+333,C10996,Trasmissioni Service SAS,Distributore,,,,Export,Francia,FR,8,RB 60 gg FM,2007-09-10
+334,C10999,Tecno Industriale B.V.,Manutenzione / End user,,,,Export,Paesi Bassi,NL,10,RB 60 gg FM,2019-12-21
+335,C11002,Officine Veneta S.r.l.,Distributore,Verona,VR,Veneto,Nord-Est,Italia,IT,4,Bonifico 30 gg,2006-07-02
+336,C11005,Fluid Group S.n.c.,Manutenzione / End user,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,Bonifico 30 gg,2020-01-01
+337,C11008,Movimento Service GmbH,OEM,,,,Export,Germania,DE,10,Bonifico 60 gg DF,2016-02-10
+338,C11011,Costruzioni Europa S.r.l.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 60 gg FM,2007-12-13
+339,C11014,Meccanica Padana S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 30 gg,2005-05-31
+340,C11017,Costruzioni Nord S.n.c.,Distributore,Padova,PD,Veneto,Nord-Est,Italia,IT,3,RB 120 gg FM,2008-05-13
+341,C11020,Ricambi Adriatica Sp. z o.o.,Manutenzione / End user,,,,Export,Polonia,PL,8,Bonifico 60 gg DF,2007-04-04
+342,C11023,Oleodinamica Adriatica S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 120 gg FM,2006-10-22
+343,C11026,Macchine Tech GmbH,Manutenzione / End user,,,,Export,Austria,AT,8,RB 60 gg FM,2005-08-25
+344,C11029,Fluid Tirrenica S.L.,OEM,,,,Export,Spagna,ES,9,RB 60 gg FM,2009-12-29
+345,C11032,Movimento Tirrenica S.r.l.,Manutenzione / End user,Roma,RM,Lazio,Centro,Italia,IT,6,RB 90 gg FM,2020-02-19
+346,C11035,Agri Alpina S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2007-11-17
+347,C11038,Sistemi Veneta GmbH,OEM,,,,Export,Germania,DE,10,Bonifico 60 gg DF,2006-09-01
+348,C11041,Costruzioni Padana S.r.l.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2008-07-07
+349,C11044,Movimento Lombarda S.n.c.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2009-07-20
+350,C11047,Idraulica Lombarda GmbH,OEM,,,,Export,Germania,DE,10,Bonifico 30 gg,2005-01-24
+351,C11050,Idraulica Europa S.L.,Distributore,,,,Export,Spagna,ES,8,RB 90 gg FM,2005-02-12
+352,C11053,Idraulica Alpina S.R.L.,Distributore,,,,Export,Romania,RO,8,RB 60 gg FM,2008-07-21
+353,C11056,Officine Industriale S.r.l.,OEM,Verona,VR,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2010-04-16
+354,C11059,Fluid Europa S.p.A.,OEM,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 60 gg FM,2021-11-13
+355,C11062,Agri Adriatica S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 30 gg,2009-10-03
+356,C11065,Officine Padana S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2015-11-22
+357,C11068,Impianti Veneta S.n.c.,Manutenzione / End user,Verona,VR,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2012-03-15
+358,C11071,Macchine Emiliana S.n.c.,Distributore,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2017-05-16
+359,C11074,Costruzioni Tirrenica GmbH,Distributore,,,,Export,Germania,DE,8,RB 60 gg FM,2008-02-15
+360,C11077,Idraulica Service S.n.c.,OEM,Verona,VR,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2017-10-01
+361,C11080,Officine Center S.p.A.,Distributore,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 90 gg FM,2011-04-03
+362,C11083,Tecno Adriatica S.r.l.,OEM,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2020-04-27
+363,C11086,Meccanica Group S.r.l.,Distributore,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2011-05-07
+364,C11089,Macchine Service S.r.l.,Manutenzione / End user,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2017-03-30
+365,C11092,Trasmissioni Service B.V.,Manutenzione / End user,,,,Export,Paesi Bassi,NL,9,Bonifico 30 gg,2006-11-13
+366,C11095,Meccanica Europa S.r.l.,Distributore,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2018-12-11
+367,C11098,Costruzioni Service S.r.l.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,5,RB 90 gg FM,2020-05-18
+368,C11101,Ricambi Adriatica S.r.l.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,5,RB 60 gg FM,2019-04-23
+369,C11104,Sistemi Adriatica SAS,Manutenzione / End user,,,,Export,Francia,FR,9,RB 60 gg FM,2017-07-09
+370,C11107,Impianti Toscana S.n.c.,OEM,Padova,PD,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2013-09-04
+371,C11110,Ricambi Center S.p.A.,Manutenzione / End user,Ancona,AN,Marche,Centro,Italia,IT,5,Bonifico 60 gg DF,2009-06-01
+372,C11113,Macchine Padana S.r.l.,OEM,Padova,PD,Veneto,Nord-Est,Italia,IT,4,Bonifico 30 gg,2020-06-19
+373,C11116,Ricambi Toscana S.r.l.,Distributore,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2021-01-18
+374,C11119,Impianti Emiliana S.p.A.,Distributore,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2018-07-29
+375,C11122,Meccanica Industriale S.p.A.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2015-11-07
+376,C11125,Idraulica Italia S.p.A.,Distributore,Prato,PO,Toscana,Centro,Italia,IT,6,RB 120 gg FM,2021-04-02
+377,C11128,Tecno Sud S.r.l.,Distributore,Bari,BA,Puglia,Sud e Isole,Italia,IT,7,RB 60 gg FM,2008-04-20
+378,C11131,Fluid Group S.p.A.,OEM,Padova,PD,Veneto,Nord-Est,Italia,IT,4,RB 60 gg FM,2013-09-18
+379,C11134,Fluid Group S.r.l.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2005-07-16
+380,C11137,Movimento Center S.r.l.,OEM,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,RB 90 gg FM,2013-03-17
+381,C11140,Movimento Center S.p.A.,OEM,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2014-06-24
+382,C11143,Impianti Lombarda S.p.A.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,5,RB 60 gg FM,2017-05-24
+383,C11146,Agri Sud S.r.l.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,Bonifico 30 gg,2006-03-02
+384,C11149,Ricambi Toscana S.n.c.,OEM,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2020-01-31
+385,C11152,Agri Adriatica S.p.A.,Manutenzione / End user,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2012-07-11
+386,C11155,Agri Padana S.n.c.,Distributore,Firenze,FI,Toscana,Centro,Italia,IT,5,RB 90 gg FM,2006-09-02
+387,C11158,Trasmissioni Emiliana S.n.c.,Manutenzione / End user,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2019-05-28
+388,C11161,Costruzioni Emiliana S.r.l.,Manutenzione / End user,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2007-10-06
+389,C11164,Fluid Padana GmbH,OEM,,,,Export,Germania,DE,8,Bonifico 60 gg DF,2018-03-02
+390,C11167,Idraulica Center Sp. z o.o.,OEM,,,,Export,Polonia,PL,8,RB 90 gg FM,2021-10-03
+391,C11170,Fluid Italia S.p.A.,Manutenzione / End user,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2021-09-27
+392,C11173,Movimento Group S.r.l.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,5,RB 120 gg FM,2019-11-03
+393,C11176,Hydro Center S.r.l.,OEM,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2012-01-16
+394,C11179,Fluid Emiliana S.p.A.,OEM,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 30 gg,2018-04-11
+395,C11182,Officine Tirrenica S.r.l.,Distributore,Vicenza,VI,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2007-12-10
+396,C11185,Meccanica Veneta S.n.c.,OEM,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2009-04-20
+397,C11188,Tecno Emiliana S.r.l.,Manutenzione / End user,Perugia,PG,Umbria,Centro,Italia,IT,5,Bonifico 60 gg DF,2007-11-04
+398,C11191,Agri Tech S.r.l.,Manutenzione / End user,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 120 gg FM,2018-08-27
+399,C11194,Impianti Tech S.r.l.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2008-09-08
+400,C11197,Meccanica Sud S.n.c.,Manutenzione / End user,Padova,PD,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2008-07-27
+401,C11200,Macchine Toscana S.n.c.,OEM,Torino,TO,Piemonte,Nord-Ovest,Italia,IT,1,RB 90 gg FM,2020-10-08
+402,C11203,Agri Nord S.n.c.,OEM,Firenze,FI,Toscana,Centro,Italia,IT,5,Bonifico 60 gg DF,2017-08-05
+403,C11206,Idraulica Italia S.r.l.,Distributore,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,Bonifico 60 gg DF,2015-02-11
+404,C11209,Hydro Alpina S.r.l.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 90 gg FM,2022-06-30
+405,C11212,Fluid Center S.r.l.,Distributore,Reggio Emilia,RE,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2018-11-05
+406,C11215,Macchine Veneta S.L.,Distributore,,,,Export,Spagna,ES,10,RB 60 gg FM,2018-02-17
+407,C11218,Tecno Alpina S.r.l.,OEM,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,Bonifico 60 gg DF,2011-10-16
+408,C11221,Macchine Europa S.n.c.,Distributore,Genova,GE,Liguria,Nord-Ovest,Italia,IT,1,RB 120 gg FM,2009-12-18
+409,C11224,Fluid Sud S.r.l.,Manutenzione / End user,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2010-04-16
+410,C11227,Sistemi Alpina S.r.l.,OEM,Verona,VR,Veneto,Nord-Est,Italia,IT,3,RB 60 gg FM,2006-10-21
+411,C11230,Oleodinamica Service S.r.l.,Distributore,Milano,MI,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2011-09-14
+412,C11233,Impianti Group SAS,OEM,,,,Export,Francia,FR,10,RB 90 gg FM,2017-03-08
+413,C11236,Sistemi Europa S.r.l.,Distributore,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,1,Bonifico 60 gg DF,2013-01-25
+414,C11239,Movimento Service S.n.c.,Manutenzione / End user,Vicenza,VI,Veneto,Nord-Est,Italia,IT,4,RB 90 gg FM,2005-01-29
+415,C11242,Trasmissioni Group S.r.l.,Manutenzione / End user,Varese,VA,Lombardia,Nord-Ovest,Italia,IT,2,Bonifico 60 gg DF,2018-07-23
+416,C11245,Idraulica Industriale S.n.c.,OEM,Prato,PO,Toscana,Centro,Italia,IT,6,RB 60 gg FM,2019-01-02
+417,C11248,Ricambi Tech S.r.l.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,4,RB 60 gg FM,2010-10-23
+418,C11251,Macchine Sud S.r.l.,Distributore,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,4,Bonifico 60 gg DF,2020-08-30
+419,C11254,Movimento Europa S.r.l.,Distributore,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2013-07-24
+420,C11257,Costruzioni Toscana S.r.l.,OEM,Genova,GE,Liguria,Nord-Ovest,Italia,IT,2,RB 60 gg FM,2013-04-12
+421,C11260,Costruzioni Veneta S.n.c.,Manutenzione / End user,Pescara,PE,Abruzzo,Sud e Isole,Italia,IT,7,RB 60 gg FM,2013-12-01
+422,C11263,Sistemi Tech S.r.l.,Manutenzione / End user,Napoli,NA,Campania,Sud e Isole,Italia,IT,7,RB 120 gg FM,2013-12-19
+423,C11266,Hydro Adriatica S.p.A.,Distributore,Bologna,BO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 90 gg FM,2011-03-10
+424,C11269,Hydro Group S.r.l.,Manutenzione / End user,Padova,PD,Veneto,Nord-Est,Italia,IT,3,RB 90 gg FM,2016-12-05
+425,C11272,Oleodinamica Tech S.n.c.,Manutenzione / End user,Modena,MO,Emilia-Romagna,Nord-Est,Italia,IT,3,RB 60 gg FM,2013-09-16
+426,C11275,Meccanica Industriale S.n.c.,OEM,Bergamo,BG,Lombardia,Nord-Ovest,Italia,IT,2,RB 90 gg FM,2007-04-26
+427,C11278,Oleodinamica Center S.r.l.,Distributore,Brescia,BS,Lombardia,Nord-Ovest,Italia,IT,1,RB 60 gg FM,2015-06-20
+428,C11281,Fluid Service S.r.l.,Distributore,Roma,RM,Lazio,Centro,Italia,IT,6,Bonifico 60 gg DF,2017-08-25
+429,C11284,Costruzioni Center S.r.l.,Manutenzione / End user,Prato,PO,Toscana,Centro,Italia,IT,6,RB 60 gg FM,2015-12-19
+430,C11287,Fluid Lombarda S.p.A.,Distributore,Udine,UD,Friuli-Venezia Giulia,Nord-Est,Italia,IT,4,RB 90 gg FM,2021-11-18
