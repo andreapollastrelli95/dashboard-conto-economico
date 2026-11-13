@@ -8,7 +8,7 @@ USE FinancePL;
 GO
 SET NOCOUNT ON;
 
-DECLARE @DataPath NVARCHAR(400) = N'C:\Projects\pl-performance-dashboard\data\';   -- <-- modificare
+DECLARE @DataPath NVARCHAR(400) = N'C:\Projects\dashboard-conto-economico\data\';   -- <-- modificare
 DECLARE @sql NVARCHAR(MAX);
 
 DECLARE @files TABLE (TableName SYSNAME, FileName NVARCHAR(200));

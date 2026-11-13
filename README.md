@@ -57,7 +57,7 @@ Più alcune misure di supporto: ricavi YTD e ultimi 12 mesi, nuovi clienti / cli
 ## Struttura del repository
 
 ```
-pl-performance-dashboard/
+dashboard-conto-economico/
 ├── data/                  estratti CSV (formato "ERP")
 ├── python/
 │   └── generate_data.py   generazione del dataset simulato (seed fisso)
@@ -192,7 +192,7 @@ Palette: blu notte `#1B2A41` (intestazioni, valori principali), blu `#2E5C8A` (s
 
 - Il perimetro si ferma al risultato operativo: mancano gestione finanziaria e imposte.
 - Il costo del venduto è a costo standard + varianze totali; con i dati di produzione si potrebbero separare varianze di prezzo, di efficienza e di volume.
-- Il prossimo passo sarebbe aggiungere budget e forecast per confrontare il consuntivo anche con gli obiettivi (lo faccio nel progetto [Budget vs Consuntivo](https://github.com/andreapollastrelli95/budget-vs-actual)).
+- Il prossimo passo sarebbe aggiungere budget e forecast per confrontare il consuntivo anche con gli obiettivi (lo faccio nel progetto [Budget vs Consuntivo](https://github.com/andreapollastrelli95/dashboard-budget-vs-consuntivo)).
 - Un refresh incrementale su `FactSales` avrebbe senso con volumi reali più grandi.
 
 ## Come riprodurre
@@ -203,6 +203,6 @@ Palette: blu notte `#1B2A41` (intestazioni, valori principali), blu `#2E5C8A` (s
 
 ---
 
-Andrea Pollastrelli · [Portfolio](https://andreapollastrelli95.github.io/)
+Andrea Pollastrelli · [LinkedIn](https://www.linkedin.com/in/andrea-pollastrelli-930958157) · [Portfolio](https://andreapollastrelli95.github.io/)
 
 Dati interamente simulati: nomi di aziende e persone sono di fantasia.
