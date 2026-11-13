@@ -1,0 +1,286 @@
+// =============================================================================
+//  Misure DAX - Dashboard Conto Economico e Performance Aziendale
+//  Tutte le misure stanno nella tabella vuota "_Measures", organizzate in
+//  cartelle di visualizzazione (Display Folder) come indicato sotto.
+//
+//  Convenzioni:
+//   - FactPL[Amount]       importo in segno naturale (ricavi e costi positivi)
+//   - FactPL[SignedAmount] importo con segno da conto economico (costi negativi)
+//   - le misure "P&L" leggono FactPL, quelle "Vendite" leggono FactSales.
+//     I ricavi coincidono (quadratura nello script SQL 07); il margine lordo
+//     contabile include anche le varianze di produzione, quello "Std" no.
+// =============================================================================
+
+
+// ---------------------------------------------------------------- 01 P&L ----
+
+Revenue =
+CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Ricavi" )
+// Ricavi netti di vendita (fatture - note di credito). Filtro sulla sezione del
+// piano dei conti: se domani si aggiunge un conto ricavi, la misura lo prende in automatico.
+
+COGS =
+CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Costo del venduto" )
+// Costo del venduto: costo standard delle righe vendute + varianze di produzione.
+
+Gross Margin =
+[Revenue] - [COGS]
+
+Gross Margin % =
+DIVIDE ( [Gross Margin], [Revenue] )
+// DIVIDE invece di "/" per gestire il caso ricavi = 0 senza errori (restituisce BLANK).
+
+Operating Expenses =
+CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Costi operativi" )
+// Personale, servizi, godimento beni di terzi, costi commerciali, altri costi.
+
+EBITDA =
+[Gross Margin] - [Operating Expenses]
+
+EBITDA % =
+DIVIDE ( [EBITDA], [Revenue] )
+
+D&A =
+CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Ammortamenti" )
+
+Operating Profit =
+[EBITDA] - [D&A]
+// EBIT / risultato operativo. Non comprende gestione finanziaria e imposte
+// (fuori perimetro: il dataset arriva fino al reddito operativo).
+
+Operating Profit % =
+DIVIDE ( [Operating Profit], [Revenue] )
+
+Opex % on Revenue =
+DIVIDE ( [Operating Expenses], [Revenue] )
+
+
+// ------------------------------------------------- 02 Conto economico (matrice)
+
+PL Amount =
+VAR _Line = SELECTEDVALUE ( PLLayout[PLLineKey] )
+VAR _Type = SELECTEDVALUE ( PLLayout[LineType] )
+RETURN
+    SWITCH (
+        TRUE (),
+        _Type = "Detail",
+            CALCULATE ( SUM ( FactPL[SignedAmount] ), Account[PLLineKey] = _Line ),
+        _Type = "Subtotal",
+            CALCULATE ( SUM ( FactPL[SignedAmount] ), Account[PLLineKey] < _Line ),
+        BLANK ()
+    )
+// PLLayout e' una tabella scollegata con le righe del CE riclassificato.
+// Le righe di dettaglio sommano i conti mappati su quella riga; i subtotali
+// (Margine lordo, EBITDA, EBIT) sommano tutte le righe precedenti.
+// Funziona perche' SignedAmount ha gia' i costi in negativo.
+
+PL Amount PY =
+CALCULATE ( [PL Amount], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+PL Delta vs PY =
+VAR _CY = [PL Amount]
+VAR _PY = [PL Amount PY]
+RETURN IF ( NOT ISBLANK ( _PY ), _CY - _PY )
+
+PL Delta % vs PY =
+VAR _CY = [PL Amount]
+VAR _PY = [PL Amount PY]
+RETURN DIVIDE ( _CY - _PY, ABS ( _PY ) )
+// ABS al denominatore: per le righe di costo (negative) un aumento del costo
+// deve risultare come variazione negativa, non positiva.
+
+PL % on Revenue =
+DIVIDE ( [PL Amount], CALCULATE ( [Revenue], REMOVEFILTERS ( PLLayout ) ) )
+
+
+// ---------------------------------------------------- 03 Time intelligence --
+
+Revenue PY =
+CALCULATE ( [Revenue], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+YoY Growth % =
+VAR _PY = [Revenue PY]
+RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [Revenue] - _PY, _PY ) )
+// Restituisce BLANK per il 2023 (nessun anno precedente) invece di +100%.
+
+Revenue YTD =
+TOTALYTD ( [Revenue], 'Calendar'[Date] )
+
+Revenue YTD PY =
+CALCULATE ( [Revenue YTD], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+YTD Growth % =
+DIVIDE ( [Revenue YTD] - [Revenue YTD PY], [Revenue YTD PY] )
+
+Revenue R12M =
+CALCULATE (
+    [Revenue],
+    DATESINPERIOD ( 'Calendar'[Date], MAX ( 'Calendar'[Date] ), -12, MONTH )
+)
+// Ricavi ultimi 12 mesi mobili: elimina la stagionalita' (agosto/dicembre)
+// e fa vedere la tendenza di fondo.
+
+EBITDA PY =
+CALCULATE ( [EBITDA], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+EBITDA YoY % =
+VAR _PY = [EBITDA PY]
+RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [EBITDA] - _PY, ABS ( _PY ) ) )
+
+EBITDA % R12M =
+VAR _Period = DATESINPERIOD ( 'Calendar'[Date], MAX ( 'Calendar'[Date] ), -12, MONTH )
+RETURN DIVIDE ( CALCULATE ( [EBITDA], _Period ), CALCULATE ( [Revenue], _Period ) )
+
+Gross Margin % PY =
+CALCULATE ( [Gross Margin %], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+Gross Margin % Delta pp =
+IF ( NOT ISBLANK ( [Gross Margin % PY] ), ( [Gross Margin %] - [Gross Margin % PY] ) * 100 )
+// Variazione in punti percentuali (es. -3,2 pp): sui margini e' piu' leggibile
+// di una variazione percentuale di una percentuale.
+
+
+// --------------------------------------------------------------- 04 Vendite --
+
+Net Sales =
+SUM ( FactSales[NetAmount] )
+
+Std COGS =
+SUM ( FactSales[COGSAmount] )
+
+Std Gross Margin =
+[Net Sales] - [Std COGS]
+
+Std Gross Margin % =
+DIVIDE ( [Std Gross Margin], [Net Sales] )
+
+Gross Sales =
+SUM ( FactSales[GrossAmount] )
+
+Avg Discount % =
+DIVIDE (
+    CALCULATE ( SUM ( FactSales[DiscountAmount] ), FactSales[DocumentType] = "FT" ),
+    CALCULATE ( SUM ( FactSales[GrossAmount] ), FactSales[DocumentType] = "FT" )
+)
+
+Credit Notes =
+-CALCULATE ( SUM ( FactSales[NetAmount] ), FactSales[DocumentType] = "NC" )
+
+Credit Notes % =
+DIVIDE ( [Credit Notes], CALCULATE ( [Net Sales], FactSales[DocumentType] = "FT" ) )
+
+Quantity Sold =
+SUM ( FactSales[Quantity] )
+
+Invoices =
+CALCULATE ( DISTINCTCOUNT ( FactSales[DocumentNumber] ), FactSales[DocumentType] = "FT" )
+
+Avg Invoice Value =
+DIVIDE ( CALCULATE ( [Net Sales], FactSales[DocumentType] = "FT" ), [Invoices] )
+
+Net Sales PY =
+CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+
+Net Sales YoY % =
+VAR _PY = [Net Sales PY]
+RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [Net Sales] - _PY, _PY ) )
+
+
+// ----------------------------------------------------------------- 05 Clienti
+
+Active Customers =
+CALCULATE ( DISTINCTCOUNT ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+// Clienti con almeno una fattura nel periodo (le sole note di credito non contano).
+
+Revenue per Customer =
+DIVIDE ( [Net Sales], [Active Customers] )
+
+New Customers =
+VAR _Start = MIN ( 'Calendar'[Date] )
+VAR _CustomersInPeriod =
+    CALCULATETABLE ( VALUES ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+VAR _CustomersBefore =
+    CALCULATETABLE (
+        VALUES ( FactSales[CustomerKey] ),
+        FactSales[DocumentType] = "FT",
+        'Calendar'[Date] < _Start,
+        REMOVEFILTERS ( 'Calendar' )
+    )
+RETURN COUNTROWS ( EXCEPT ( _CustomersInPeriod, _CustomersBefore ) )
+// Clienti che fatturano nel periodo e non avevano mai fatturato prima.
+// Nota: nel 2023 tutti risultano "nuovi" perche' lo storico parte dal 2023.
+
+Lost Customers =
+VAR _Start = MIN ( 'Calendar'[Date] )
+VAR _PrevYear =
+    CALCULATETABLE (
+        VALUES ( FactSales[CustomerKey] ),
+        FactSales[DocumentType] = "FT",
+        DATESINPERIOD ( 'Calendar'[Date], _Start - 1, -12, MONTH )
+    )
+VAR _Current =
+    CALCULATETABLE ( VALUES ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+RETURN COUNTROWS ( EXCEPT ( _PrevYear, _Current ) )
+// Clienti attivi nei 12 mesi precedenti il periodo che nel periodo non hanno fatturato.
+
+Customer Rank =
+IF (
+    HASONEVALUE ( Customer[CustomerName] ),
+    RANKX ( ALLSELECTED ( Customer[CustomerName] ), [Net Sales], , DESC, DENSE )
+)
+
+Top 10 Customers Share % =
+VAR _Top10 = TOPN ( 10, ALLSELECTED ( Customer[CustomerName] ), [Net Sales], DESC )
+RETURN DIVIDE ( CALCULATE ( [Net Sales], _Top10 ), CALCULATE ( [Net Sales], ALLSELECTED ( Customer ) ) )
+// Indicatore di concentrazione: quanta parte del fatturato dipende dai primi 10 clienti.
+
+Pareto Cumulative % =
+VAR _CurrentSales = [Net Sales]
+VAR _AllCustomers =
+    ADDCOLUMNS ( ALLSELECTED ( Customer[CustomerName] ), "@Sales", [Net Sales] )
+VAR _Cumulative =
+    SUMX ( FILTER ( _AllCustomers, [@Sales] >= _CurrentSales ), [@Sales] )
+RETURN DIVIDE ( _Cumulative, CALCULATE ( [Net Sales], ALLSELECTED ( Customer ) ) )
+// Per ogni cliente: fatturato cumulato di tutti i clienti con vendite >= alle sue,
+// sul totale. Va usata con i clienti ordinati per Net Sales decrescente.
+
+
+// ---------------------------------------------------------------- 06 Prodotti
+
+Revenue Share by Category % =
+DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], ALLSELECTED ( Product[ProductCategory] ) ) )
+// Peso della categoria sul totale selezionato (Revenue per Product Category in %).
+
+Avg Net Price =
+DIVIDE ( [Net Sales], [Quantity Sold] )
+
+Avg Std Cost =
+DIVIDE ( [Std COGS], [Quantity Sold] )
+
+
+// ------------------------------------------------------- 07 UI e formattazione
+
+Selected Period Label =
+VAR _Min = MIN ( 'Calendar'[Date] )
+VAR _Max = MAX ( 'Calendar'[Date] )
+RETURN FORMAT ( _Min, "mmm yyyy" ) & " - " & FORMAT ( _Max, "mmm yyyy" )
+
+Title P&L =
+"Conto economico riclassificato | " & [Selected Period Label]
+
+KPI Color YoY =
+VAR _v = [YoY Growth %]
+RETURN
+    SWITCH (
+        TRUE (),
+        ISBLANK ( _v ), "#8A94A6",
+        _v >= 0.03, "#1E8E5A",
+        _v >= 0, "#E0A100",
+        "#C0392B"
+    )
+// Usata nella formattazione condizionale (Formato -> Colore carattere -> Valore campo).
+// Verde oltre +3%, giallo tra 0 e +3%, rosso se in calo.
+
+KPI Color Margin =
+VAR _d = [Gross Margin % Delta pp]
+RETURN IF ( ISBLANK ( _d ), "#8A94A6", IF ( _d >= 0, "#1E8E5A", "#C0392B" ) )
