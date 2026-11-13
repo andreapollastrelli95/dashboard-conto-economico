@@ -14,6 +14,8 @@ Obiettivi del progetto:
 
 - Dashboard Power BI composta da 5 pagine interattive.
 
+images/01_overview.png
+
 Risultato: un sistema integrato di Business Intelligence per analizzare le performance aziendali e supportare le decisioni strategiche.
 
 Dati interamente simulati
