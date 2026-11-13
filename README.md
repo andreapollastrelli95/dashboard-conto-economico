@@ -71,7 +71,8 @@ dashboard-conto-economico/
 │   └── 07_data_quality_checks.sql
 ├── powerbi/
 │   ├── measures.dax       tutte le misure, commentate
-│   └── power_query.m      query M e parametri
+│   ├── power_query.m      query M e parametri
+│   └── model_csv.tmdl     modello completo da incollare nella vista TMDL (versione CSV)
 ├── docs/
 │   ├── data_dictionary.md
 │   └── dashboard_layout.md
@@ -200,6 +201,8 @@ Palette: blu notte `#1B2A41` (intestazioni, valori principali), blu `#2E5C8A` (s
 1. `pip install pandas numpy` e `python python/generate_data.py` (opzionale, i CSV sono già nella cartella `data`).
 2. Eseguire in SSMS gli script SQL in ordine, impostando `@DataPath` nello script 03.
 3. In Power BI Desktop: creare i parametri `ServerName` e `DatabaseName`, incollare le query da `powerbi/power_query.m`, creare le relazioni come nello schema e le misure da `powerbi/measures.dax`.
+
+**Senza SQL Server** (per esempio su Windows ARM): `python python/export_model_tables.py` crea in `data/model` le stesse tabelle delle viste `rpt`. Poi in Power BI Desktop apri la vista TMDL, incolla `powerbi/model_csv.tmdl` (dopo aver sostituito `C:\Projects\...` con il percorso della tua cartella), clicca Applica e poi Aggiorna: tabelle, relazioni e misure vengono create in un colpo solo.
 
 ---
 

@@ -1,0 +1,155 @@
+ProductKey,ProductCode,ProductName,ProductCategory,ProductSubcategory
+1,VLV-1000,Valvole di massima VLV1000,Valvole idrauliche,Valvole di massima
+2,VLV-1007,Distributori VLV1007,Valvole idrauliche,Distributori
+3,VLV-1014,Valvole di ritegno VLV1014,Valvole idrauliche,Valvole di ritegno
+4,VLV-1021,Valvole di massima VLV1021,Valvole idrauliche,Valvole di massima
+5,VLV-1028,Distributori VLV1028,Valvole idrauliche,Distributori
+6,VLV-1035,Valvole di ritegno VLV1035,Valvole idrauliche,Valvole di ritegno
+7,VLV-1042,Valvole di massima VLV1042,Valvole idrauliche,Valvole di massima
+8,VLV-1049,Distributori VLV1049,Valvole idrauliche,Distributori
+9,VLV-1056,Valvole di ritegno VLV1056,Valvole idrauliche,Valvole di ritegno
+10,VLV-1063,Valvole di massima VLV1063,Valvole idrauliche,Valvole di massima
+11,VLV-1070,Distributori VLV1070,Valvole idrauliche,Distributori
+12,VLV-1077,Valvole di ritegno VLV1077,Valvole idrauliche,Valvole di ritegno
+13,VLV-1084,Valvole di massima VLV1084,Valvole idrauliche,Valvole di massima
+14,VLV-1091,Distributori VLV1091,Valvole idrauliche,Distributori
+15,VLV-1098,Valvole di ritegno VLV1098,Valvole idrauliche,Valvole di ritegno
+16,VLV-1105,Valvole di massima VLV1105,Valvole idrauliche,Valvole di massima
+17,VLV-1112,Distributori VLV1112,Valvole idrauliche,Distributori
+18,VLV-1119,Valvole di ritegno VLV1119,Valvole idrauliche,Valvole di ritegno
+19,VLV-1126,Valvole di massima VLV1126,Valvole idrauliche,Valvole di massima
+20,VLV-1133,Distributori VLV1133,Valvole idrauliche,Distributori
+21,VLV-1140,Valvole di ritegno VLV1140,Valvole idrauliche,Valvole di ritegno
+22,VLV-1147,Valvole di massima VLV1147,Valvole idrauliche,Valvole di massima
+23,VLV-1154,Distributori VLV1154,Valvole idrauliche,Distributori
+24,VLV-1161,Valvole di ritegno VLV1161,Valvole idrauliche,Valvole di ritegno
+25,VLV-1168,Valvole di massima VLV1168,Valvole idrauliche,Valvole di massima
+26,VLV-1175,Distributori VLV1175,Valvole idrauliche,Distributori
+27,VLV-1182,Valvole di ritegno VLV1182,Valvole idrauliche,Valvole di ritegno
+28,VLV-1189,Valvole di massima VLV1189,Valvole idrauliche,Valvole di massima
+29,VLV-1196,Distributori VLV1196,Valvole idrauliche,Distributori
+30,VLV-1203,Valvole di ritegno VLV1203,Valvole idrauliche,Valvole di ritegno
+31,VLV-1210,Valvole di massima VLV1210,Valvole idrauliche,Valvole di massima
+32,VLV-1217,Distributori VLV1217,Valvole idrauliche,Distributori
+33,VLV-1224,Valvole di ritegno VLV1224,Valvole idrauliche,Valvole di ritegno
+34,VLV-1231,Valvole di massima VLV1231,Valvole idrauliche,Valvole di massima
+35,PMP-1000,Pompe gruppo 1 PMP1000,Pompe a ingranaggi,Pompe gruppo 1
+36,PMP-1007,Pompe gruppo 2 PMP1007,Pompe a ingranaggi,Pompe gruppo 2
+37,PMP-1014,Pompe gruppo 3 PMP1014,Pompe a ingranaggi,Pompe gruppo 3
+38,PMP-1021,Pompe gruppo 1 PMP1021,Pompe a ingranaggi,Pompe gruppo 1
+39,PMP-1028,Pompe gruppo 2 PMP1028,Pompe a ingranaggi,Pompe gruppo 2
+40,PMP-1035,Pompe gruppo 3 PMP1035,Pompe a ingranaggi,Pompe gruppo 3
+41,PMP-1042,Pompe gruppo 1 PMP1042,Pompe a ingranaggi,Pompe gruppo 1
+42,PMP-1049,Pompe gruppo 2 PMP1049,Pompe a ingranaggi,Pompe gruppo 2
+43,PMP-1056,Pompe gruppo 3 PMP1056,Pompe a ingranaggi,Pompe gruppo 3
+44,PMP-1063,Pompe gruppo 1 PMP1063,Pompe a ingranaggi,Pompe gruppo 1
+45,PMP-1070,Pompe gruppo 2 PMP1070,Pompe a ingranaggi,Pompe gruppo 2
+46,PMP-1077,Pompe gruppo 3 PMP1077,Pompe a ingranaggi,Pompe gruppo 3
+47,PMP-1084,Pompe gruppo 1 PMP1084,Pompe a ingranaggi,Pompe gruppo 1
+48,PMP-1091,Pompe gruppo 2 PMP1091,Pompe a ingranaggi,Pompe gruppo 2
+49,PMP-1098,Pompe gruppo 3 PMP1098,Pompe a ingranaggi,Pompe gruppo 3
+50,PMP-1105,Pompe gruppo 1 PMP1105,Pompe a ingranaggi,Pompe gruppo 1
+51,PMP-1112,Pompe gruppo 2 PMP1112,Pompe a ingranaggi,Pompe gruppo 2
+52,PMP-1119,Pompe gruppo 3 PMP1119,Pompe a ingranaggi,Pompe gruppo 3
+53,PMP-1126,Pompe gruppo 1 PMP1126,Pompe a ingranaggi,Pompe gruppo 1
+54,PMP-1133,Pompe gruppo 2 PMP1133,Pompe a ingranaggi,Pompe gruppo 2
+55,PMP-1140,Pompe gruppo 3 PMP1140,Pompe a ingranaggi,Pompe gruppo 3
+56,PMP-1147,Pompe gruppo 1 PMP1147,Pompe a ingranaggi,Pompe gruppo 1
+57,PMP-1154,Pompe gruppo 2 PMP1154,Pompe a ingranaggi,Pompe gruppo 2
+58,PMP-1161,Pompe gruppo 3 PMP1161,Pompe a ingranaggi,Pompe gruppo 3
+59,PMP-1168,Pompe gruppo 1 PMP1168,Pompe a ingranaggi,Pompe gruppo 1
+60,PMP-1175,Pompe gruppo 2 PMP1175,Pompe a ingranaggi,Pompe gruppo 2
+61,CIL-1000,Doppio effetto CIL1000,Cilindri oleodinamici,Doppio effetto
+62,CIL-1007,Semplice effetto CIL1007,Cilindri oleodinamici,Semplice effetto
+63,CIL-1014,Telescopici CIL1014,Cilindri oleodinamici,Telescopici
+64,CIL-1021,Doppio effetto CIL1021,Cilindri oleodinamici,Doppio effetto
+65,CIL-1028,Semplice effetto CIL1028,Cilindri oleodinamici,Semplice effetto
+66,CIL-1035,Telescopici CIL1035,Cilindri oleodinamici,Telescopici
+67,CIL-1042,Doppio effetto CIL1042,Cilindri oleodinamici,Doppio effetto
+68,CIL-1049,Semplice effetto CIL1049,Cilindri oleodinamici,Semplice effetto
+69,CIL-1056,Telescopici CIL1056,Cilindri oleodinamici,Telescopici
+70,CIL-1063,Doppio effetto CIL1063,Cilindri oleodinamici,Doppio effetto
+71,CIL-1070,Semplice effetto CIL1070,Cilindri oleodinamici,Semplice effetto
+72,CIL-1077,Telescopici CIL1077,Cilindri oleodinamici,Telescopici
+73,CIL-1084,Doppio effetto CIL1084,Cilindri oleodinamici,Doppio effetto
+74,CIL-1091,Semplice effetto CIL1091,Cilindri oleodinamici,Semplice effetto
+75,CIL-1098,Telescopici CIL1098,Cilindri oleodinamici,Telescopici
+76,CIL-1105,Doppio effetto CIL1105,Cilindri oleodinamici,Doppio effetto
+77,CIL-1112,Semplice effetto CIL1112,Cilindri oleodinamici,Semplice effetto
+78,CIL-1119,Telescopici CIL1119,Cilindri oleodinamici,Telescopici
+79,CIL-1126,Doppio effetto CIL1126,Cilindri oleodinamici,Doppio effetto
+80,CIL-1133,Semplice effetto CIL1133,Cilindri oleodinamici,Semplice effetto
+81,CIL-1140,Telescopici CIL1140,Cilindri oleodinamici,Telescopici
+82,CIL-1147,Doppio effetto CIL1147,Cilindri oleodinamici,Doppio effetto
+83,CIL-1154,Semplice effetto CIL1154,Cilindri oleodinamici,Semplice effetto
+84,CIL-1161,Telescopici CIL1161,Cilindri oleodinamici,Telescopici
+85,CIL-1168,Doppio effetto CIL1168,Cilindri oleodinamici,Doppio effetto
+86,CIL-1175,Semplice effetto CIL1175,Cilindri oleodinamici,Semplice effetto
+87,CIL-1182,Telescopici CIL1182,Cilindri oleodinamici,Telescopici
+88,CIL-1189,Doppio effetto CIL1189,Cilindri oleodinamici,Doppio effetto
+89,CIL-1196,Semplice effetto CIL1196,Cilindri oleodinamici,Semplice effetto
+90,CIL-1203,Telescopici CIL1203,Cilindri oleodinamici,Telescopici
+91,RAC-1000,Raccordi diritti RAC1000,Raccorderia,Raccordi diritti
+92,RAC-1007,Raccordi a 90 RAC1007,Raccorderia,Raccordi a 90
+93,RAC-1014,Adattatori RAC1014,Raccorderia,Adattatori
+94,RAC-1021,Raccordi diritti RAC1021,Raccorderia,Raccordi diritti
+95,RAC-1028,Raccordi a 90 RAC1028,Raccorderia,Raccordi a 90
+96,RAC-1035,Adattatori RAC1035,Raccorderia,Adattatori
+97,RAC-1042,Raccordi diritti RAC1042,Raccorderia,Raccordi diritti
+98,RAC-1049,Raccordi a 90 RAC1049,Raccorderia,Raccordi a 90
+99,RAC-1056,Adattatori RAC1056,Raccorderia,Adattatori
+100,RAC-1063,Raccordi diritti RAC1063,Raccorderia,Raccordi diritti
+101,RAC-1070,Raccordi a 90 RAC1070,Raccorderia,Raccordi a 90
+102,RAC-1077,Adattatori RAC1077,Raccorderia,Adattatori
+103,RAC-1084,Raccordi diritti RAC1084,Raccorderia,Raccordi diritti
+104,RAC-1091,Raccordi a 90 RAC1091,Raccorderia,Raccordi a 90
+105,RAC-1098,Adattatori RAC1098,Raccorderia,Adattatori
+106,RAC-1105,Raccordi diritti RAC1105,Raccorderia,Raccordi diritti
+107,RAC-1112,Raccordi a 90 RAC1112,Raccorderia,Raccordi a 90
+108,RAC-1119,Adattatori RAC1119,Raccorderia,Adattatori
+109,RAC-1126,Raccordi diritti RAC1126,Raccorderia,Raccordi diritti
+110,RAC-1133,Raccordi a 90 RAC1133,Raccorderia,Raccordi a 90
+111,RAC-1140,Adattatori RAC1140,Raccorderia,Adattatori
+112,RAC-1147,Raccordi diritti RAC1147,Raccorderia,Raccordi diritti
+113,RAC-1154,Raccordi a 90 RAC1154,Raccorderia,Raccordi a 90
+114,RAC-1161,Adattatori RAC1161,Raccorderia,Adattatori
+115,RAC-1168,Raccordi diritti RAC1168,Raccorderia,Raccordi diritti
+116,RAC-1175,Raccordi a 90 RAC1175,Raccorderia,Raccordi a 90
+117,RAC-1182,Adattatori RAC1182,Raccorderia,Adattatori
+118,RAC-1189,Raccordi diritti RAC1189,Raccorderia,Raccordi diritti
+119,RAC-1196,Raccordi a 90 RAC1196,Raccorderia,Raccordi a 90
+120,RAC-1203,Adattatori RAC1203,Raccorderia,Adattatori
+121,RAC-1210,Raccordi diritti RAC1210,Raccorderia,Raccordi diritti
+122,RAC-1217,Raccordi a 90 RAC1217,Raccorderia,Raccordi a 90
+123,RAC-1224,Adattatori RAC1224,Raccorderia,Adattatori
+124,RAC-1231,Raccordi diritti RAC1231,Raccorderia,Raccordi diritti
+125,RAC-1238,Raccordi a 90 RAC1238,Raccorderia,Raccordi a 90
+126,RAC-1245,Adattatori RAC1245,Raccorderia,Adattatori
+127,RAC-1252,Raccordi diritti RAC1252,Raccorderia,Raccordi diritti
+128,RAC-1259,Raccordi a 90 RAC1259,Raccorderia,Raccordi a 90
+129,RAC-1266,Adattatori RAC1266,Raccorderia,Adattatori
+130,RAC-1273,Raccordi diritti RAC1273,Raccorderia,Raccordi diritti
+131,RIC-1000,Kit guarnizioni RIC1000,Ricambi e kit revisione,Kit guarnizioni
+132,RIC-1007,Ricambi pompe RIC1007,Ricambi e kit revisione,Ricambi pompe
+133,RIC-1014,Ricambi cilindri RIC1014,Ricambi e kit revisione,Ricambi cilindri
+134,RIC-1021,Kit guarnizioni RIC1021,Ricambi e kit revisione,Kit guarnizioni
+135,RIC-1028,Ricambi pompe RIC1028,Ricambi e kit revisione,Ricambi pompe
+136,RIC-1035,Ricambi cilindri RIC1035,Ricambi e kit revisione,Ricambi cilindri
+137,RIC-1042,Kit guarnizioni RIC1042,Ricambi e kit revisione,Kit guarnizioni
+138,RIC-1049,Ricambi pompe RIC1049,Ricambi e kit revisione,Ricambi pompe
+139,RIC-1056,Ricambi cilindri RIC1056,Ricambi e kit revisione,Ricambi cilindri
+140,RIC-1063,Kit guarnizioni RIC1063,Ricambi e kit revisione,Kit guarnizioni
+141,RIC-1070,Ricambi pompe RIC1070,Ricambi e kit revisione,Ricambi pompe
+142,RIC-1077,Ricambi cilindri RIC1077,Ricambi e kit revisione,Ricambi cilindri
+143,RIC-1084,Kit guarnizioni RIC1084,Ricambi e kit revisione,Kit guarnizioni
+144,RIC-1091,Ricambi pompe RIC1091,Ricambi e kit revisione,Ricambi pompe
+145,RIC-1098,Ricambi cilindri RIC1098,Ricambi e kit revisione,Ricambi cilindri
+146,RIC-1105,Kit guarnizioni RIC1105,Ricambi e kit revisione,Kit guarnizioni
+147,RIC-1112,Ricambi pompe RIC1112,Ricambi e kit revisione,Ricambi pompe
+148,RIC-1119,Ricambi cilindri RIC1119,Ricambi e kit revisione,Ricambi cilindri
+149,RIC-1126,Kit guarnizioni RIC1126,Ricambi e kit revisione,Kit guarnizioni
+150,RIC-1133,Ricambi pompe RIC1133,Ricambi e kit revisione,Ricambi pompe
+151,RIC-1140,Ricambi cilindri RIC1140,Ricambi e kit revisione,Ricambi cilindri
+152,RIC-1147,Kit guarnizioni RIC1147,Ricambi e kit revisione,Kit guarnizioni
+153,RIC-1154,Ricambi pompe RIC1154,Ricambi e kit revisione,Ricambi pompe
+154,RIC-1161,Ricambi cilindri RIC1161,Ricambi e kit revisione,Ricambi cilindri

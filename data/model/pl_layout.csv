@@ -1,0 +1,12 @@
+PLLineKey,PLLineName,LineType,SortOrder
+1,Ricavi netti,Detail,10
+2,Costo del venduto,Detail,20
+3,MARGINE LORDO,Subtotal,30
+4,Costo del personale,Detail,40
+5,Servizi,Detail,50
+6,Godimento beni di terzi,Detail,60
+7,Costi commerciali,Detail,70
+8,Altri costi operativi,Detail,80
+9,EBITDA,Subtotal,90
+10,Ammortamenti,Detail,100
+11,EBIT - RISULTATO OPERATIVO,Subtotal,110

@@ -1,0 +1,431 @@
+CustomerKey,CustomerCode,CustomerName,CustomerSegment,Region,SalesArea,Country,Market
+1,C10000,Tecno Nord SAS,Manutenzione / End user,Francia,Export,Francia,Estero
+2,C10003,Oleodinamica Europa S.n.c.,Distributore,Piemonte,Nord-Ovest,Italia,Italia
+3,C10006,Hydro Veneta S.n.c.,Distributore,Veneto,Nord-Est,Italia,Italia
+4,C10009,Tecno Emiliana Sp. z o.o.,Manutenzione / End user,Polonia,Export,Polonia,Estero
+5,C10012,Officine Center S.n.c.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+6,C10015,Ricambi Padana S.r.l.,Distributore,Puglia,Sud e Isole,Italia,Italia
+7,C10018,Sistemi Sud S.r.l.,OEM,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+8,C10021,Hydro Emiliana S.r.l.,Distributore,Puglia,Sud e Isole,Italia,Italia
+9,C10024,Meccanica Sud S.p.A.,Distributore,Lazio,Centro,Italia,Italia
+10,C10027,Trasmissioni Emiliana S.p.A.,Manutenzione / End user,Marche,Centro,Italia,Italia
+11,C10030,Movimento Adriatica S.p.A.,OEM,Veneto,Nord-Est,Italia,Italia
+12,C10033,Impianti Veneta GmbH,OEM,Germania,Export,Germania,Estero
+13,C10036,Tecno Service S.p.A.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+14,C10039,Sistemi Nord S.r.l.,Manutenzione / End user,Piemonte,Nord-Ovest,Italia,Italia
+15,C10042,Costruzioni Sud S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+16,C10045,Officine Nord S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+17,C10048,Officine Tech S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+18,C10051,Tecno Tirrenica S.p.A.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+19,C10054,Fluid Alpina S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+20,C10057,Macchine Lombarda S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+21,C10060,Sistemi Industriale B.V.,Distributore,Paesi Bassi,Export,Paesi Bassi,Estero
+22,C10063,Impianti Padana S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+23,C10066,Costruzioni Lombarda S.L.,Manutenzione / End user,Spagna,Export,Spagna,Estero
+24,C10069,Trasmissioni Service S.r.l.,Distributore,Puglia,Sud e Isole,Italia,Italia
+25,C10072,Macchine Padana S.p.A.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+26,C10075,Hydro Tech S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+27,C10078,Fluid Sud GmbH,OEM,Austria,Export,Austria,Estero
+28,C10081,Ricambi Nord S.p.A.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+29,C10084,Oleodinamica Tirrenica S.p.A.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+30,C10087,Macchine Emiliana GmbH,Distributore,Germania,Export,Germania,Estero
+31,C10090,Tecno Sud S.n.c.,Distributore,Toscana,Centro,Italia,Italia
+32,C10093,Meccanica Nord S.p.A.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+33,C10096,Macchine Group S.p.A.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+34,C10099,Impianti Alpina S.r.l.,OEM,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+35,C10102,Hydro Tirrenica S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+36,C10105,Idraulica Adriatica S.p.A.,Distributore,Veneto,Nord-Est,Italia,Italia
+37,C10108,Movimento Italia S.p.A.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+38,C10111,Officine Veneta S.p.A.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+39,C10114,Movimento Italia GmbH,Distributore,Austria,Export,Austria,Estero
+40,C10117,Hydro Italia GmbH,Distributore,Germania,Export,Germania,Estero
+41,C10120,Sistemi Toscana S.n.c.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+42,C10123,Movimento Veneta S.p.A.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+43,C10126,Sistemi Padana S.n.c.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+44,C10129,Costruzioni Sud S.n.c.,Distributore,Toscana,Centro,Italia,Italia
+45,C10132,Oleodinamica Lombarda S.r.l.,Distributore,Lazio,Centro,Italia,Italia
+46,C10135,Hydro Padana S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+47,C10138,Oleodinamica Padana S.L.,Manutenzione / End user,Spagna,Export,Spagna,Estero
+48,C10141,Costruzioni Lombarda S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+49,C10144,Hydro Lombarda S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+50,C10147,Idraulica Tech S.p.A.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+51,C10150,Oleodinamica Toscana S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+52,C10153,Impianti Adriatica GmbH,Distributore,Austria,Export,Austria,Estero
+53,C10156,Ricambi Group S.n.c.,OEM,Campania,Sud e Isole,Italia,Italia
+54,C10159,Fluid Tech S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+55,C10162,Movimento Lombarda S.r.l.,OEM,Campania,Sud e Isole,Italia,Italia
+56,C10165,Costruzioni Center A.S.,Manutenzione / End user,Turchia,Export,Turchia,Estero
+57,C10168,Ricambi Nord S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+58,C10171,Hydro Nord S.n.c.,Distributore,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+59,C10174,Movimento Emiliana S.r.l.,Manutenzione / End user,Campania,Sud e Isole,Italia,Italia
+60,C10177,Officine Padana S.p.A.,Distributore,Veneto,Nord-Est,Italia,Italia
+61,C10180,Movimento Europa GmbH,OEM,Austria,Export,Austria,Estero
+62,C10183,Macchine Veneta GmbH,Manutenzione / End user,Germania,Export,Germania,Estero
+63,C10186,Meccanica Emiliana GmbH,OEM,Germania,Export,Germania,Estero
+64,C10189,Idraulica Lombarda S.L.,Distributore,Spagna,Export,Spagna,Estero
+65,C10192,Trasmissioni Center S.L.,Distributore,Spagna,Export,Spagna,Estero
+66,C10195,Ricambi Center S.r.l.,Distributore,Umbria,Centro,Italia,Italia
+67,C10198,Trasmissioni Tech S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+68,C10201,Trasmissioni Center S.r.l.,Distributore,Lazio,Centro,Italia,Italia
+69,C10204,Idraulica Emiliana GmbH,Manutenzione / End user,Germania,Export,Germania,Estero
+70,C10207,Officine Toscana S.n.c.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+71,C10210,Meccanica Veneta GmbH,Distributore,Germania,Export,Germania,Estero
+72,C10213,Hydro Sud Sp. z o.o.,OEM,Polonia,Export,Polonia,Estero
+73,C10216,Officine Italia S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+74,C10219,Ricambi Service S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+75,C10222,Trasmissioni Veneta S.r.l.,Distributore,Toscana,Centro,Italia,Italia
+76,C10225,Agri Tirrenica S.r.l.,OEM,Toscana,Centro,Italia,Italia
+77,C10228,Officine Alpina GmbH,Manutenzione / End user,Germania,Export,Germania,Estero
+78,C10231,Idraulica Tech S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+79,C10234,Officine Toscana S.r.l.,OEM,Campania,Sud e Isole,Italia,Italia
+80,C10237,Oleodinamica Veneta S.n.c.,Manutenzione / End user,Lazio,Centro,Italia,Italia
+81,C10240,Meccanica Emiliana S.r.l.,OEM,Liguria,Nord-Ovest,Italia,Italia
+82,C10243,Ricambi Emiliana S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+83,C10246,Meccanica Tirrenica S.p.A.,Distributore,Marche,Centro,Italia,Italia
+84,C10249,Tecno Service S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+85,C10252,Impianti Group S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+86,C10255,Impianti Center Sp. z o.o.,Manutenzione / End user,Polonia,Export,Polonia,Estero
+87,C10258,Hydro Sud S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+88,C10261,Agri Lombarda S.p.A.,Distributore,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+89,C10264,Macchine Service S.n.c.,Distributore,Campania,Sud e Isole,Italia,Italia
+90,C10267,Sistemi Padana S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+91,C10270,Idraulica Alpina S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+92,C10273,Meccanica Industriale GmbH,Distributore,Germania,Export,Germania,Estero
+93,C10276,Hydro Lombarda SAS,Distributore,Francia,Export,Francia,Estero
+94,C10279,Movimento Alpina S.n.c.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+95,C10282,Sistemi Tirrenica S.n.c.,OEM,Veneto,Nord-Est,Italia,Italia
+96,C10285,Meccanica Center S.p.A.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+97,C10288,Macchine Tirrenica S.p.A.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+98,C10291,Ricambi Group S.p.A.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+99,C10294,Trasmissioni Adriatica S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+100,C10297,Officine Europa B.V.,Manutenzione / End user,Paesi Bassi,Export,Paesi Bassi,Estero
+101,C10300,Hydro Nord S.p.A.,OEM,Lazio,Centro,Italia,Italia
+102,C10303,Impianti Sud S.p.A.,OEM,Piemonte,Nord-Ovest,Italia,Italia
+103,C10306,Movimento Veneta S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+104,C10309,Ricambi Adriatica B.V.,OEM,Paesi Bassi,Export,Paesi Bassi,Estero
+105,C10312,Ricambi Tech S.n.c.,Distributore,Umbria,Centro,Italia,Italia
+106,C10315,Oleodinamica Padana S.R.L.,Manutenzione / End user,Romania,Export,Romania,Estero
+107,C10318,Agri Sud S.p.A.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+108,C10321,Costruzioni Tirrenica S.n.c.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+109,C10324,Meccanica Sud S.r.l.,Manutenzione / End user,Lazio,Centro,Italia,Italia
+110,C10327,Oleodinamica Industriale S.p.A.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+111,C10330,Officine Europa S.p.A.,Manutenzione / End user,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+112,C10333,Sistemi Tirrenica S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+113,C10336,Ricambi Emiliana S.p.A.,OEM,Liguria,Nord-Ovest,Italia,Italia
+114,C10339,Idraulica Italia S.L.,Distributore,Spagna,Export,Spagna,Estero
+115,C10342,Meccanica Service S.r.l.,Distributore,Sicilia,Sud e Isole,Italia,Italia
+116,C10345,Idraulica Italia Sp. z o.o.,OEM,Polonia,Export,Polonia,Estero
+117,C10348,Meccanica Toscana S.r.l.,Distributore,Marche,Centro,Italia,Italia
+118,C10351,Oleodinamica Toscana S.r.l.,Distributore,Sicilia,Sud e Isole,Italia,Italia
+119,C10354,Tecno Padana S.r.l.,OEM,Piemonte,Nord-Ovest,Italia,Italia
+120,C10357,Idraulica Center S.p.A.,OEM,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+121,C10360,Impianti Industriale S.n.c.,Distributore,Veneto,Nord-Est,Italia,Italia
+122,C10363,Movimento Padana S.r.l.,Distributore,Umbria,Centro,Italia,Italia
+123,C10366,Macchine Industriale S.r.l.,Distributore,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+124,C10369,Ricambi Tirrenica B.V.,OEM,Paesi Bassi,Export,Paesi Bassi,Estero
+125,C10372,Hydro Adriatica S.n.c.,Manutenzione / End user,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+126,C10375,Officine Industriale S.n.c.,Distributore,Marche,Centro,Italia,Italia
+127,C10378,Movimento Group S.n.c.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+128,C10381,Fluid Emiliana S.r.l.,Distributore,Lazio,Centro,Italia,Italia
+129,C10384,Trasmissioni Nord S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+130,C10387,Macchine Sud GmbH,OEM,Germania,Export,Germania,Estero
+131,C10390,Impianti Sud GmbH,OEM,Germania,Export,Germania,Estero
+132,C10393,Tecno Toscana S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+133,C10396,Idraulica Center S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+134,C10399,Ricambi Italia S.n.c.,Distributore,Umbria,Centro,Italia,Italia
+135,C10402,Oleodinamica Nord S.r.l.,OEM,Toscana,Centro,Italia,Italia
+136,C10405,Tecno Alpina SAS,Distributore,Francia,Export,Francia,Estero
+137,C10408,Costruzioni Adriatica S.r.l.,OEM,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+138,C10411,Sistemi Group S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+139,C10414,Movimento Tech S.r.l.,Distributore,Toscana,Centro,Italia,Italia
+140,C10417,Hydro Sud S.n.c.,OEM,Campania,Sud e Isole,Italia,Italia
+141,C10420,Impianti Tirrenica S.n.c.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+142,C10423,Sistemi Lombarda S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+143,C10426,Meccanica Lombarda S.p.A.,OEM,Abruzzo,Sud e Isole,Italia,Italia
+144,C10429,Macchine Toscana GmbH,Manutenzione / End user,Austria,Export,Austria,Estero
+145,C10432,Movimento Emiliana S.L.,Manutenzione / End user,Spagna,Export,Spagna,Estero
+146,C10435,Oleodinamica Toscana GmbH,Manutenzione / End user,Austria,Export,Austria,Estero
+147,C10438,Costruzioni Group S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+148,C10441,Officine Lombarda S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+149,C10444,Idraulica Lombarda S.r.l.,Manutenzione / End user,Marche,Centro,Italia,Italia
+150,C10447,Macchine Nord S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+151,C10450,Trasmissioni Emiliana S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+152,C10453,Macchine Alpina S.r.l.,Distributore,Abruzzo,Sud e Isole,Italia,Italia
+153,C10456,Sistemi Group S.p.A.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+154,C10459,Agri Industriale S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+155,C10462,Impianti Emiliana S.r.l.,Distributore,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+156,C10465,Movimento Emiliana S.p.A.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+157,C10468,Sistemi Tech S.p.A.,OEM,Piemonte,Nord-Ovest,Italia,Italia
+158,C10471,Ricambi Industriale S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+159,C10474,Tecno Toscana GmbH,Distributore,Germania,Export,Germania,Estero
+160,C10477,Meccanica Italia GmbH,OEM,Germania,Export,Germania,Estero
+161,C10480,Tecno Padana S.n.c.,Manutenzione / End user,Puglia,Sud e Isole,Italia,Italia
+162,C10483,Trasmissioni Lombarda S.n.c.,Manutenzione / End user,Liguria,Nord-Ovest,Italia,Italia
+163,C10486,Oleodinamica Industriale S.r.l.,Manutenzione / End user,Puglia,Sud e Isole,Italia,Italia
+164,C10489,Hydro Industriale S.r.l.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+165,C10492,Costruzioni Tech S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+166,C10495,Trasmissioni Europa S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+167,C10498,Ricambi Service S.n.c.,OEM,Campania,Sud e Isole,Italia,Italia
+168,C10501,Fluid Padana S.r.l.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+169,C10504,Ricambi Italia GmbH,Distributore,Germania,Export,Germania,Estero
+170,C10507,Sistemi Italia S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+171,C10510,Hydro Padana S.L.,Distributore,Spagna,Export,Spagna,Estero
+172,C10513,Fluid Toscana S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+173,C10516,Agri Center GmbH,OEM,Germania,Export,Germania,Estero
+174,C10519,Impianti Toscana S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+175,C10522,Oleodinamica Alpina S.n.c.,Distributore,Umbria,Centro,Italia,Italia
+176,C10525,Fluid Tirrenica S.n.c.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+177,C10528,Idraulica Tirrenica S.r.l.,OEM,Toscana,Centro,Italia,Italia
+178,C10531,Trasmissioni Industriale S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+179,C10534,Costruzioni Industriale S.r.l.,OEM,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+180,C10537,Tecno Tirrenica SAS,Manutenzione / End user,Francia,Export,Francia,Estero
+181,C10540,Sistemi Center S.r.l.,Manutenzione / End user,Sicilia,Sud e Isole,Italia,Italia
+182,C10543,Officine Group S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+183,C10546,Oleodinamica Veneta S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+184,C10549,Trasmissioni Padana S.r.l.,Manutenzione / End user,Piemonte,Nord-Ovest,Italia,Italia
+185,C10552,Trasmissioni Italia S.n.c.,Distributore,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+186,C10555,Agri Center S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+187,C10558,Officine Europa GmbH,Distributore,Germania,Export,Germania,Estero
+188,C10561,Meccanica Padana Sp. z o.o.,Manutenzione / End user,Polonia,Export,Polonia,Estero
+189,C10564,Fluid Adriatica S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+190,C10567,Hydro Nord S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+191,C10570,Tecno Alpina S.p.A.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+192,C10573,Ricambi Veneta S.r.l.,OEM,Puglia,Sud e Isole,Italia,Italia
+193,C10576,Officine Europa S.n.c.,Manutenzione / End user,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+194,C10579,Oleodinamica Tirrenica S.n.c.,Distributore,Campania,Sud e Isole,Italia,Italia
+195,C10582,Impianti Tech GmbH,Distributore,Austria,Export,Austria,Estero
+196,C10585,Fluid Italia S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+197,C10588,Tecno Industriale S.n.c.,Distributore,Umbria,Centro,Italia,Italia
+198,C10591,Fluid Italia S.n.c.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+199,C10594,Movimento Italia S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+200,C10597,Hydro Center S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+201,C10600,Idraulica Europa S.r.l.,Manutenzione / End user,Piemonte,Nord-Ovest,Italia,Italia
+202,C10603,Sistemi Toscana GmbH,Distributore,Austria,Export,Austria,Estero
+203,C10606,Costruzioni Tech S.n.c.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+204,C10609,Oleodinamica Service S.p.A.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+205,C10612,Hydro Group S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+206,C10615,Sistemi Toscana S.p.A.,Distributore,Veneto,Nord-Est,Italia,Italia
+207,C10618,Meccanica Adriatica S.p.A.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+208,C10621,Tecno Nord Sp. z o.o.,Manutenzione / End user,Polonia,Export,Polonia,Estero
+209,C10624,Hydro Veneta S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+210,C10627,Impianti Adriatica S.r.l.,Distributore,Campania,Sud e Isole,Italia,Italia
+211,C10630,Sistemi Center S.n.c.,Distributore,Veneto,Nord-Est,Italia,Italia
+212,C10633,Macchine Veneta S.r.l.,Manutenzione / End user,Sicilia,Sud e Isole,Italia,Italia
+213,C10636,Fluid Padana S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+214,C10639,Oleodinamica Emiliana S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+215,C10642,Sistemi Industriale S.n.c.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+216,C10645,Macchine Emiliana S.p.A.,Distributore,Toscana,Centro,Italia,Italia
+217,C10648,Impianti Tech S.p.A.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+218,C10651,Ricambi Alpina S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+219,C10654,Costruzioni Italia S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+220,C10657,Idraulica Sud S.n.c.,OEM,Veneto,Nord-Est,Italia,Italia
+221,C10660,Hydro Emiliana S.n.c.,Manutenzione / End user,Lazio,Centro,Italia,Italia
+222,C10663,Tecno Nord S.r.l.,Distributore,Piemonte,Nord-Ovest,Italia,Italia
+223,C10666,Officine Lombarda GmbH,Distributore,Germania,Export,Germania,Estero
+224,C10669,Oleodinamica Industriale S.n.c.,Manutenzione / End user,Marche,Centro,Italia,Italia
+225,C10672,Officine Center S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+226,C10675,Idraulica Emiliana S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+227,C10678,Oleodinamica Lombarda S.p.A.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+228,C10681,Ricambi Lombarda S.r.l.,Distributore,Toscana,Centro,Italia,Italia
+229,C10684,Agri Lombarda Sp. z o.o.,Manutenzione / End user,Polonia,Export,Polonia,Estero
+230,C10687,Tecno Europa S.p.A.,Distributore,Abruzzo,Sud e Isole,Italia,Italia
+231,C10690,Hydro Italia S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+232,C10693,Fluid Tech S.r.l.,Distributore,Piemonte,Nord-Ovest,Italia,Italia
+233,C10696,Oleodinamica Adriatica S.n.c.,OEM,Piemonte,Nord-Ovest,Italia,Italia
+234,C10699,Trasmissioni Adriatica S.n.c.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+235,C10702,Officine Italia S.L.,Manutenzione / End user,Spagna,Export,Spagna,Estero
+236,C10705,Movimento Service B.V.,Distributore,Paesi Bassi,Export,Paesi Bassi,Estero
+237,C10708,Officine Alpina B.V.,Distributore,Paesi Bassi,Export,Paesi Bassi,Estero
+238,C10711,Officine Group SAS,Manutenzione / End user,Francia,Export,Francia,Estero
+239,C10714,Macchine Nord S.p.A.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+240,C10717,Idraulica Veneta S.r.l.,OEM,Campania,Sud e Isole,Italia,Italia
+241,C10720,Trasmissioni Lombarda S.r.l.,Distributore,Puglia,Sud e Isole,Italia,Italia
+242,C10723,Tecno Center S.n.c.,OEM,Toscana,Centro,Italia,Italia
+243,C10726,Trasmissioni Veneta S.n.c.,Distributore,Veneto,Nord-Est,Italia,Italia
+244,C10729,Macchine Europa S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+245,C10732,Agri Sud S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+246,C10735,Ricambi Tirrenica S.p.A.,Distributore,Abruzzo,Sud e Isole,Italia,Italia
+247,C10738,Sistemi Center S.p.A.,Distributore,Veneto,Nord-Est,Italia,Italia
+248,C10741,Idraulica Veneta S.p.A.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+249,C10744,Oleodinamica Group S.p.A.,OEM,Toscana,Centro,Italia,Italia
+250,C10747,Idraulica Sud S.r.l.,Manutenzione / End user,Puglia,Sud e Isole,Italia,Italia
+251,C10750,Macchine Emiliana S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+252,C10753,Tecno Center GmbH,OEM,Germania,Export,Germania,Estero
+253,C10756,Trasmissioni Sud S.r.l.,Manutenzione / End user,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+254,C10759,Macchine Tirrenica S.r.l.,Manutenzione / End user,Lazio,Centro,Italia,Italia
+255,C10762,Agri Lombarda S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+256,C10765,Idraulica Service S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+257,C10768,Idraulica Nord S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+258,C10771,Ricambi Tirrenica S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+259,C10774,Oleodinamica Adriatica S.p.A.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+260,C10777,Costruzioni Padana S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+261,C10780,Meccanica Lombarda GmbH,Manutenzione / End user,Austria,Export,Austria,Estero
+262,C10783,Meccanica Nord S.r.l.,Distributore,Sicilia,Sud e Isole,Italia,Italia
+263,C10786,Agri Tech S.L.,Distributore,Spagna,Export,Spagna,Estero
+264,C10789,Macchine Tech S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+265,C10792,Costruzioni Industriale S.p.A.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+266,C10795,Fluid Emiliana S.n.c.,OEM,Puglia,Sud e Isole,Italia,Italia
+267,C10798,Meccanica Lombarda S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+268,C10801,Sistemi Veneta S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+269,C10804,Hydro Europa S.p.A.,Manutenzione / End user,Lazio,Centro,Italia,Italia
+270,C10807,Hydro Padana S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+271,C10810,Fluid Veneta S.r.l.,Distributore,Piemonte,Nord-Ovest,Italia,Italia
+272,C10813,Trasmissioni Tirrenica S.p.A.,OEM,Campania,Sud e Isole,Italia,Italia
+273,C10816,Sistemi Alpina S.p.A.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+274,C10819,Impianti Europa S.r.l.,Manutenzione / End user,Piemonte,Nord-Ovest,Italia,Italia
+275,C10822,Meccanica Industriale S.r.l.,Manutenzione / End user,Marche,Centro,Italia,Italia
+276,C10825,Officine Lombarda S.p.A.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+277,C10828,Ricambi Lombarda S.R.L.,Manutenzione / End user,Romania,Export,Romania,Estero
+278,C10831,Oleodinamica Tirrenica S.r.l.,Distributore,Abruzzo,Sud e Isole,Italia,Italia
+279,C10834,Oleodinamica Padana S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+280,C10837,Movimento Nord S.r.l.,Manutenzione / End user,Liguria,Nord-Ovest,Italia,Italia
+281,C10840,Impianti Sud S.r.l.,Distributore,Lazio,Centro,Italia,Italia
+282,C10843,Agri Service S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+283,C10846,Agri Toscana S.r.l.,Manutenzione / End user,Marche,Centro,Italia,Italia
+284,C10849,Impianti Tirrenica S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+285,C10852,Tecno Sud S.p.A.,Distributore,Campania,Sud e Isole,Italia,Italia
+286,C10855,Agri Industriale S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+287,C10858,Movimento Industriale S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+288,C10861,Tecno Tech S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+289,C10864,Impianti Service S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+290,C10867,Movimento Toscana S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+291,C10870,Trasmissioni Tirrenica S.r.l.,Manutenzione / End user,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+292,C10873,Macchine Service S.p.A.,Distributore,Campania,Sud e Isole,Italia,Italia
+293,C10876,Impianti Adriatica S.p.A.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+294,C10879,Fluid Sud S.n.c.,OEM,Toscana,Centro,Italia,Italia
+295,C10882,Agri Padana S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+296,C10885,Tecno Service GmbH,Distributore,Germania,Export,Germania,Estero
+297,C10888,Agri Italia S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+298,C10891,Macchine Service GmbH,Manutenzione / End user,Austria,Export,Austria,Estero
+299,C10894,Oleodinamica Group S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+300,C10897,Hydro Adriatica S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+301,C10900,Hydro Italia S.L.,OEM,Spagna,Export,Spagna,Estero
+302,C10903,Hydro Emiliana GmbH,Distributore,Germania,Export,Germania,Estero
+303,C10906,Oleodinamica Italia S.r.l.,Manutenzione / End user,Abruzzo,Sud e Isole,Italia,Italia
+304,C10909,Macchine Europa GmbH,Distributore,Austria,Export,Austria,Estero
+305,C10912,Hydro Toscana S.n.c.,Distributore,Veneto,Nord-Est,Italia,Italia
+306,C10915,Costruzioni Nord S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+307,C10918,Impianti Group S.p.A.,Distributore,Abruzzo,Sud e Isole,Italia,Italia
+308,C10921,Trasmissioni Service Sp. z o.o.,Distributore,Polonia,Export,Polonia,Estero
+309,C10924,Costruzioni Italia S.p.A.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+310,C10927,Movimento Alpina S.r.l.,OEM,Abruzzo,Sud e Isole,Italia,Italia
+311,C10930,Meccanica Nord S.n.c.,Distributore,Sicilia,Sud e Isole,Italia,Italia
+312,C10933,Sistemi Industriale S.r.l.,Distributore,Lazio,Centro,Italia,Italia
+313,C10936,Agri Group S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+314,C10939,Ricambi Service GmbH,OEM,Germania,Export,Germania,Estero
+315,C10942,Tecno Europa GmbH,Manutenzione / End user,Germania,Export,Germania,Estero
+316,C10945,Meccanica Service GmbH,Manutenzione / End user,Germania,Export,Germania,Estero
+317,C10948,Tecno Alpina GmbH,Distributore,Germania,Export,Germania,Estero
+318,C10951,Trasmissioni Alpina S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+319,C10954,Ricambi Emiliana GmbH,OEM,Germania,Export,Germania,Estero
+320,C10957,Officine Europa S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+321,C10960,Macchine Italia S.r.l.,Distributore,Marche,Centro,Italia,Italia
+322,C10963,Sistemi Tirrenica SAS,Manutenzione / End user,Francia,Export,Francia,Estero
+323,C10966,Macchine Center S.r.l.,OEM,Piemonte,Nord-Ovest,Italia,Italia
+324,C10969,Sistemi Emiliana S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+325,C10972,Oleodinamica Sud S.p.A.,OEM,Liguria,Nord-Ovest,Italia,Italia
+326,C10975,Hydro Service S.r.l.,Distributore,Marche,Centro,Italia,Italia
+327,C10978,Hydro Center GmbH,Manutenzione / End user,Germania,Export,Germania,Estero
+328,C10981,Fluid Industriale S.p.A.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+329,C10984,Meccanica Service SAS,Distributore,Francia,Export,Francia,Estero
+330,C10987,Movimento Alpina SAS,OEM,Francia,Export,Francia,Estero
+331,C10990,Movimento Tech S.p.A.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+332,C10993,Tecno Veneta S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+333,C10996,Trasmissioni Service SAS,Distributore,Francia,Export,Francia,Estero
+334,C10999,Tecno Industriale B.V.,Manutenzione / End user,Paesi Bassi,Export,Paesi Bassi,Estero
+335,C11002,Officine Veneta S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+336,C11005,Fluid Group S.n.c.,Manutenzione / End user,Abruzzo,Sud e Isole,Italia,Italia
+337,C11008,Movimento Service GmbH,OEM,Germania,Export,Germania,Estero
+338,C11011,Costruzioni Europa S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+339,C11014,Meccanica Padana S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+340,C11017,Costruzioni Nord S.n.c.,Distributore,Veneto,Nord-Est,Italia,Italia
+341,C11020,Ricambi Adriatica Sp. z o.o.,Manutenzione / End user,Polonia,Export,Polonia,Estero
+342,C11023,Oleodinamica Adriatica S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+343,C11026,Macchine Tech GmbH,Manutenzione / End user,Austria,Export,Austria,Estero
+344,C11029,Fluid Tirrenica S.L.,OEM,Spagna,Export,Spagna,Estero
+345,C11032,Movimento Tirrenica S.r.l.,Manutenzione / End user,Lazio,Centro,Italia,Italia
+346,C11035,Agri Alpina S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+347,C11038,Sistemi Veneta GmbH,OEM,Germania,Export,Germania,Estero
+348,C11041,Costruzioni Padana S.r.l.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+349,C11044,Movimento Lombarda S.n.c.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+350,C11047,Idraulica Lombarda GmbH,OEM,Germania,Export,Germania,Estero
+351,C11050,Idraulica Europa S.L.,Distributore,Spagna,Export,Spagna,Estero
+352,C11053,Idraulica Alpina S.R.L.,Distributore,Romania,Export,Romania,Estero
+353,C11056,Officine Industriale S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+354,C11059,Fluid Europa S.p.A.,OEM,Campania,Sud e Isole,Italia,Italia
+355,C11062,Agri Adriatica S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+356,C11065,Officine Padana S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+357,C11068,Impianti Veneta S.n.c.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+358,C11071,Macchine Emiliana S.n.c.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+359,C11074,Costruzioni Tirrenica GmbH,Distributore,Germania,Export,Germania,Estero
+360,C11077,Idraulica Service S.n.c.,OEM,Veneto,Nord-Est,Italia,Italia
+361,C11080,Officine Center S.p.A.,Distributore,Abruzzo,Sud e Isole,Italia,Italia
+362,C11083,Tecno Adriatica S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+363,C11086,Meccanica Group S.r.l.,Distributore,Campania,Sud e Isole,Italia,Italia
+364,C11089,Macchine Service S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+365,C11092,Trasmissioni Service B.V.,Manutenzione / End user,Paesi Bassi,Export,Paesi Bassi,Estero
+366,C11095,Meccanica Europa S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+367,C11098,Costruzioni Service S.r.l.,Manutenzione / End user,Marche,Centro,Italia,Italia
+368,C11101,Ricambi Adriatica S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+369,C11104,Sistemi Adriatica SAS,Manutenzione / End user,Francia,Export,Francia,Estero
+370,C11107,Impianti Toscana S.n.c.,OEM,Veneto,Nord-Est,Italia,Italia
+371,C11110,Ricambi Center S.p.A.,Manutenzione / End user,Marche,Centro,Italia,Italia
+372,C11113,Macchine Padana S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+373,C11116,Ricambi Toscana S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+374,C11119,Impianti Emiliana S.p.A.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+375,C11122,Meccanica Industriale S.p.A.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+376,C11125,Idraulica Italia S.p.A.,Distributore,Toscana,Centro,Italia,Italia
+377,C11128,Tecno Sud S.r.l.,Distributore,Puglia,Sud e Isole,Italia,Italia
+378,C11131,Fluid Group S.p.A.,OEM,Veneto,Nord-Est,Italia,Italia
+379,C11134,Fluid Group S.r.l.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+380,C11137,Movimento Center S.r.l.,OEM,Friuli-Venezia Giulia,Nord-Est,Italia,Italia
+381,C11140,Movimento Center S.p.A.,OEM,Liguria,Nord-Ovest,Italia,Italia
+382,C11143,Impianti Lombarda S.p.A.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+383,C11146,Agri Sud S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+384,C11149,Ricambi Toscana S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+385,C11152,Agri Adriatica S.p.A.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+386,C11155,Agri Padana S.n.c.,Distributore,Toscana,Centro,Italia,Italia
+387,C11158,Trasmissioni Emiliana S.n.c.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+388,C11161,Costruzioni Emiliana S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+389,C11164,Fluid Padana GmbH,OEM,Germania,Export,Germania,Estero
+390,C11167,Idraulica Center Sp. z o.o.,OEM,Polonia,Export,Polonia,Estero
+391,C11170,Fluid Italia S.p.A.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+392,C11173,Movimento Group S.r.l.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+393,C11176,Hydro Center S.r.l.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+394,C11179,Fluid Emiliana S.p.A.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+395,C11182,Officine Tirrenica S.r.l.,Distributore,Veneto,Nord-Est,Italia,Italia
+396,C11185,Meccanica Veneta S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+397,C11188,Tecno Emiliana S.r.l.,Manutenzione / End user,Umbria,Centro,Italia,Italia
+398,C11191,Agri Tech S.r.l.,Manutenzione / End user,Campania,Sud e Isole,Italia,Italia
+399,C11194,Impianti Tech S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+400,C11197,Meccanica Sud S.n.c.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+401,C11200,Macchine Toscana S.n.c.,OEM,Piemonte,Nord-Ovest,Italia,Italia
+402,C11203,Agri Nord S.n.c.,OEM,Toscana,Centro,Italia,Italia
+403,C11206,Idraulica Italia S.r.l.,Distributore,Campania,Sud e Isole,Italia,Italia
+404,C11209,Hydro Alpina S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+405,C11212,Fluid Center S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+406,C11215,Macchine Veneta S.L.,Distributore,Spagna,Export,Spagna,Estero
+407,C11218,Tecno Alpina S.r.l.,OEM,Emilia-Romagna,Nord-Est,Italia,Italia
+408,C11221,Macchine Europa S.n.c.,Distributore,Liguria,Nord-Ovest,Italia,Italia
+409,C11224,Fluid Sud S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+410,C11227,Sistemi Alpina S.r.l.,OEM,Veneto,Nord-Est,Italia,Italia
+411,C11230,Oleodinamica Service S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+412,C11233,Impianti Group SAS,OEM,Francia,Export,Francia,Estero
+413,C11236,Sistemi Europa S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+414,C11239,Movimento Service S.n.c.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+415,C11242,Trasmissioni Group S.r.l.,Manutenzione / End user,Lombardia,Nord-Ovest,Italia,Italia
+416,C11245,Idraulica Industriale S.n.c.,OEM,Toscana,Centro,Italia,Italia
+417,C11248,Ricambi Tech S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+418,C11251,Macchine Sud S.r.l.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+419,C11254,Movimento Europa S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+420,C11257,Costruzioni Toscana S.r.l.,OEM,Liguria,Nord-Ovest,Italia,Italia
+421,C11260,Costruzioni Veneta S.n.c.,Manutenzione / End user,Abruzzo,Sud e Isole,Italia,Italia
+422,C11263,Sistemi Tech S.r.l.,Manutenzione / End user,Campania,Sud e Isole,Italia,Italia
+423,C11266,Hydro Adriatica S.p.A.,Distributore,Emilia-Romagna,Nord-Est,Italia,Italia
+424,C11269,Hydro Group S.r.l.,Manutenzione / End user,Veneto,Nord-Est,Italia,Italia
+425,C11272,Oleodinamica Tech S.n.c.,Manutenzione / End user,Emilia-Romagna,Nord-Est,Italia,Italia
+426,C11275,Meccanica Industriale S.n.c.,OEM,Lombardia,Nord-Ovest,Italia,Italia
+427,C11278,Oleodinamica Center S.r.l.,Distributore,Lombardia,Nord-Ovest,Italia,Italia
+428,C11281,Fluid Service S.r.l.,Distributore,Lazio,Centro,Italia,Italia
+429,C11284,Costruzioni Center S.r.l.,Manutenzione / End user,Toscana,Centro,Italia,Italia
+430,C11287,Fluid Lombarda S.p.A.,Distributore,Friuli-Venezia Giulia,Nord-Est,Italia,Italia

@@ -1,0 +1,764 @@
+createOrReplace
+
+	table 'Calendar'
+		dataCategory: Time
+
+		column 'DateKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: DateKey
+
+		column 'Date'
+			dataType: dateTime
+			formatString: dd/mm/yyyy
+			isKey
+			summarizeBy: none
+			sourceColumn: Date
+
+		column 'Year'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: Year
+
+		column 'Quarter'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Quarter
+
+		column 'Month'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: Month
+
+		column 'MonthName'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: MonthName
+			sortByColumn: 'Month'
+
+		column 'MonthShort'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: MonthShort
+			sortByColumn: 'Month'
+
+		column 'YearMonth'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: YearMonth
+
+		column 'YearMonthLabel'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: YearMonthLabel
+			sortByColumn: 'YearMonth'
+
+		partition 'Calendar' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\calendar.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"DateKey", Int64.Type}, {"Date", type date}, {"Year", Int64.Type}, {"Quarter", type text}, {"Month", Int64.Type}, {"MonthName", type text}, {"MonthShort", type text}, {"YearMonth", Int64.Type}, {"YearMonthLabel", type text}}, "en-US")
+					in
+					    Typed
+
+	table 'Customer'
+
+		column 'CustomerKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: CustomerKey
+
+		column 'CustomerCode'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: CustomerCode
+
+		column 'CustomerName'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: CustomerName
+
+		column 'CustomerSegment'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: CustomerSegment
+
+		column 'Region'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Region
+
+		column 'SalesArea'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: SalesArea
+
+		column 'Country'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Country
+
+		column 'Market'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Market
+
+		partition 'Customer' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\customer.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"CustomerKey", Int64.Type}, {"CustomerCode", type text}, {"CustomerName", type text}, {"CustomerSegment", type text}, {"Region", type text}, {"SalesArea", type text}, {"Country", type text}, {"Market", type text}}, "en-US")
+					in
+					    Typed
+
+	table 'Product'
+
+		column 'ProductKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: ProductKey
+
+		column 'ProductCode'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: ProductCode
+
+		column 'ProductName'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: ProductName
+
+		column 'ProductCategory'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: ProductCategory
+
+		column 'ProductSubcategory'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: ProductSubcategory
+
+		partition 'Product' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\product.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"ProductKey", Int64.Type}, {"ProductCode", type text}, {"ProductName", type text}, {"ProductCategory", type text}, {"ProductSubcategory", type text}}, "en-US")
+					in
+					    Typed
+
+	table 'SalesRep'
+
+		column 'SalesRepKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: SalesRepKey
+
+		column 'SalesRepName'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: SalesRepName
+
+		column 'SalesArea'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: SalesArea
+
+		partition 'SalesRep' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\sales_rep.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"SalesRepKey", Int64.Type}, {"SalesRepName", type text}, {"SalesArea", type text}}, "en-US")
+					in
+					    Typed
+
+	table 'Account'
+
+		column 'AccountKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: AccountKey
+
+		column 'AccountCode'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: AccountCode
+
+		column 'Account'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: Account
+
+		column 'PLSection'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: PLSection
+
+		column 'PLSubsection'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: PLSubsection
+
+		column 'PLLineKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: PLLineKey
+
+		column 'PLSign'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: PLSign
+
+		column 'SortOrder'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: SortOrder
+
+		partition 'Account' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\account.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"AccountKey", Int64.Type}, {"AccountCode", Int64.Type}, {"Account", type text}, {"PLSection", type text}, {"PLSubsection", type text}, {"PLLineKey", Int64.Type}, {"PLSign", Int64.Type}, {"SortOrder", Int64.Type}}, "en-US")
+					in
+					    Typed
+
+	table 'CostCenter'
+
+		column 'CostCenterKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: CostCenterKey
+
+		column 'CostCenterCode'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: CostCenterCode
+
+		column 'CostCenterName'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: CostCenterName
+
+		column 'CostCenterGroup'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: CostCenterGroup
+
+		partition 'CostCenter' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\cost_center.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"CostCenterKey", Int64.Type}, {"CostCenterCode", type text}, {"CostCenterName", type text}, {"CostCenterGroup", type text}}, "en-US")
+					in
+					    Typed
+
+	table 'PLLayout'
+
+		column 'PLLineKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: PLLineKey
+
+		column 'PLLineName'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: PLLineName
+			sortByColumn: 'SortOrder'
+
+		column 'LineType'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: LineType
+
+		column 'SortOrder'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: SortOrder
+
+		partition 'PLLayout' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\pl_layout.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"PLLineKey", Int64.Type}, {"PLLineName", type text}, {"LineType", type text}, {"SortOrder", Int64.Type}}, "en-US")
+					in
+					    Typed
+
+	table 'FactSales'
+
+		column 'DateKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: DateKey
+
+		column 'CustomerKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: CustomerKey
+
+		column 'ProductKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: ProductKey
+
+		column 'SalesRepKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: SalesRepKey
+
+		column 'DocumentNumber'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: DocumentNumber
+
+		column 'DocumentType'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: DocumentType
+
+		column 'Quantity'
+			dataType: int64
+			summarizeBy: none
+			sourceColumn: Quantity
+
+		column 'GrossAmount'
+			dataType: double
+			formatString: #,0.00
+			summarizeBy: sum
+			sourceColumn: GrossAmount
+
+		column 'DiscountAmount'
+			dataType: double
+			formatString: #,0.00
+			summarizeBy: sum
+			sourceColumn: DiscountAmount
+
+		column 'NetAmount'
+			dataType: double
+			formatString: #,0.00
+			summarizeBy: sum
+			sourceColumn: NetAmount
+
+		column 'COGSAmount'
+			dataType: double
+			formatString: #,0.00
+			summarizeBy: sum
+			sourceColumn: COGSAmount
+
+		partition 'FactSales' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\fact_sales.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"DateKey", Int64.Type}, {"CustomerKey", Int64.Type}, {"ProductKey", Int64.Type}, {"SalesRepKey", Int64.Type}, {"DocumentNumber", type text}, {"DocumentType", type text}, {"Quantity", Int64.Type}, {"GrossAmount", type number}, {"DiscountAmount", type number}, {"NetAmount", type number}, {"COGSAmount", type number}}, "en-US")
+					in
+					    Typed
+
+	table 'FactPL'
+
+		column 'DateKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: DateKey
+
+		column 'AccountKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: AccountKey
+
+		column 'CostCenterKey'
+			dataType: int64
+			isHidden
+			summarizeBy: none
+			sourceColumn: CostCenterKey
+
+		column 'SourceSystem'
+			dataType: string
+			summarizeBy: none
+			sourceColumn: SourceSystem
+
+		column 'Amount'
+			dataType: double
+			formatString: #,0.00
+			summarizeBy: sum
+			sourceColumn: Amount
+
+		column 'SignedAmount'
+			dataType: double
+			formatString: #,0.00
+			summarizeBy: sum
+			sourceColumn: SignedAmount
+
+		measure 'Revenue' = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Ricavi" )
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'COGS' = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Costo del venduto" )
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'Gross Margin' = [Revenue] - [COGS]
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'Gross Margin %' = DIVIDE ( [Gross Margin], [Revenue] )
+			formatString: 0.0%
+			displayFolder: 01 P&L
+
+		measure 'Operating Expenses' = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Costi operativi" )
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'EBITDA' = [Gross Margin] - [Operating Expenses]
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'EBITDA %' = DIVIDE ( [EBITDA], [Revenue] )
+			formatString: 0.0%
+			displayFolder: 01 P&L
+
+		measure 'D&A' = CALCULATE ( SUM ( FactPL[Amount] ), Account[PLSection] = "Ammortamenti" )
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'Operating Profit' = [EBITDA] - [D&A]
+			formatString: #,0
+			displayFolder: 01 P&L
+
+		measure 'Operating Profit %' = DIVIDE ( [Operating Profit], [Revenue] )
+			formatString: 0.0%
+			displayFolder: 01 P&L
+
+		measure 'Opex % on Revenue' = DIVIDE ( [Operating Expenses], [Revenue] )
+			formatString: 0.0%
+			displayFolder: 01 P&L
+
+		measure 'PL Amount' = ```
+				VAR _Line = SELECTEDVALUE ( PLLayout[PLLineKey] )
+				VAR _Type = SELECTEDVALUE ( PLLayout[LineType] )
+				RETURN
+				    SWITCH (
+				        TRUE (),
+				        _Type = "Detail",
+				            CALCULATE ( SUM ( FactPL[SignedAmount] ), Account[PLLineKey] = _Line ),
+				        _Type = "Subtotal",
+				            CALCULATE ( SUM ( FactPL[SignedAmount] ), Account[PLLineKey] < _Line ),
+				        BLANK ()
+				    )
+				```
+			formatString: #,0
+			displayFolder: 02 Conto economico (matrice)
+
+		measure 'PL Amount PY' = CALCULATE ( [PL Amount], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+			formatString: #,0
+			displayFolder: 02 Conto economico (matrice)
+
+		measure 'PL Delta vs PY' = ```
+				VAR _CY = [PL Amount]
+				VAR _PY = [PL Amount PY]
+				RETURN IF ( NOT ISBLANK ( _PY ), _CY - _PY )
+				```
+			formatString: #,0
+			displayFolder: 02 Conto economico (matrice)
+
+		measure 'PL Delta % vs PY' = ```
+				VAR _CY = [PL Amount]
+				VAR _PY = [PL Amount PY]
+				RETURN DIVIDE ( _CY - _PY, ABS ( _PY ) )
+				```
+			formatString: 0.0%
+			displayFolder: 02 Conto economico (matrice)
+
+		measure 'PL % on Revenue' = DIVIDE ( [PL Amount], CALCULATE ( [Revenue], REMOVEFILTERS ( PLLayout ) ) )
+			formatString: 0.0%
+			displayFolder: 02 Conto economico (matrice)
+
+		measure 'Revenue PY' = CALCULATE ( [Revenue], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+			formatString: #,0
+			displayFolder: 03 Time intelligence
+
+		measure 'YoY Growth %' = ```
+				VAR _PY = [Revenue PY]
+				RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [Revenue] - _PY, _PY ) )
+				```
+			formatString: 0.0%
+			displayFolder: 03 Time intelligence
+
+		measure 'Revenue YTD' = TOTALYTD ( [Revenue], 'Calendar'[Date] )
+			formatString: #,0
+			displayFolder: 03 Time intelligence
+
+		measure 'Revenue YTD PY' = CALCULATE ( [Revenue YTD], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+			formatString: #,0
+			displayFolder: 03 Time intelligence
+
+		measure 'YTD Growth %' = DIVIDE ( [Revenue YTD] - [Revenue YTD PY], [Revenue YTD PY] )
+			formatString: 0.0%
+			displayFolder: 03 Time intelligence
+
+		measure 'Revenue R12M' = ```
+				CALCULATE (
+				    [Revenue],
+				    DATESINPERIOD ( 'Calendar'[Date], MAX ( 'Calendar'[Date] ), -12, MONTH )
+				)
+				```
+			formatString: #,0
+			displayFolder: 03 Time intelligence
+
+		measure 'EBITDA PY' = CALCULATE ( [EBITDA], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+			formatString: #,0
+			displayFolder: 03 Time intelligence
+
+		measure 'EBITDA YoY %' = ```
+				VAR _PY = [EBITDA PY]
+				RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [EBITDA] - _PY, ABS ( _PY ) ) )
+				```
+			formatString: 0.0%
+			displayFolder: 03 Time intelligence
+
+		measure 'EBITDA % R12M' = ```
+				VAR _Period = DATESINPERIOD ( 'Calendar'[Date], MAX ( 'Calendar'[Date] ), -12, MONTH )
+				RETURN DIVIDE ( CALCULATE ( [EBITDA], _Period ), CALCULATE ( [Revenue], _Period ) )
+				```
+			formatString: 0.0%
+			displayFolder: 03 Time intelligence
+
+		measure 'Gross Margin % PY' = CALCULATE ( [Gross Margin %], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+			formatString: 0.0%
+			displayFolder: 03 Time intelligence
+
+		measure 'Gross Margin % Delta pp' = IF ( NOT ISBLANK ( [Gross Margin % PY] ), ( [Gross Margin %] - [Gross Margin % PY] ) * 100 )
+			formatString: #,0.0
+			displayFolder: 03 Time intelligence
+
+		measure 'Net Sales' = SUM ( FactSales[NetAmount] )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Std COGS' = SUM ( FactSales[COGSAmount] )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Std Gross Margin' = [Net Sales] - [Std COGS]
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Std Gross Margin %' = DIVIDE ( [Std Gross Margin], [Net Sales] )
+			formatString: 0.0%
+			displayFolder: 04 Vendite
+
+		measure 'Gross Sales' = SUM ( FactSales[GrossAmount] )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Avg Discount %' = ```
+				DIVIDE (
+				    CALCULATE ( SUM ( FactSales[DiscountAmount] ), FactSales[DocumentType] = "FT" ),
+				    CALCULATE ( SUM ( FactSales[GrossAmount] ), FactSales[DocumentType] = "FT" )
+				)
+				```
+			formatString: 0.0%
+			displayFolder: 04 Vendite
+
+		measure 'Credit Notes' = -CALCULATE ( SUM ( FactSales[NetAmount] ), FactSales[DocumentType] = "NC" )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Credit Notes %' = DIVIDE ( [Credit Notes], CALCULATE ( [Net Sales], FactSales[DocumentType] = "FT" ) )
+			formatString: 0.0%
+			displayFolder: 04 Vendite
+
+		measure 'Quantity Sold' = SUM ( FactSales[Quantity] )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Invoices' = CALCULATE ( DISTINCTCOUNT ( FactSales[DocumentNumber] ), FactSales[DocumentType] = "FT" )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Avg Invoice Value' = DIVIDE ( CALCULATE ( [Net Sales], FactSales[DocumentType] = "FT" ), [Invoices] )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Net Sales PY' = CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( 'Calendar'[Date] ) )
+			formatString: #,0
+			displayFolder: 04 Vendite
+
+		measure 'Net Sales YoY %' = ```
+				VAR _PY = [Net Sales PY]
+				RETURN IF ( NOT ISBLANK ( _PY ), DIVIDE ( [Net Sales] - _PY, _PY ) )
+				```
+			formatString: 0.0%
+			displayFolder: 04 Vendite
+
+		measure 'Active Customers' = CALCULATE ( DISTINCTCOUNT ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+			formatString: #,0
+			displayFolder: 05 Clienti
+
+		measure 'Revenue per Customer' = DIVIDE ( [Net Sales], [Active Customers] )
+			formatString: #,0
+			displayFolder: 05 Clienti
+
+		measure 'New Customers' = ```
+				VAR _Start = MIN ( 'Calendar'[Date] )
+				VAR _CustomersInPeriod =
+				    CALCULATETABLE ( VALUES ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+				VAR _CustomersBefore =
+				    CALCULATETABLE (
+				        VALUES ( FactSales[CustomerKey] ),
+				        FactSales[DocumentType] = "FT",
+				        'Calendar'[Date] < _Start,
+				        REMOVEFILTERS ( 'Calendar' )
+				    )
+				RETURN COUNTROWS ( EXCEPT ( _CustomersInPeriod, _CustomersBefore ) )
+				```
+			formatString: #,0
+			displayFolder: 05 Clienti
+
+		measure 'Lost Customers' = ```
+				VAR _Start = MIN ( 'Calendar'[Date] )
+				VAR _PrevYear =
+				    CALCULATETABLE (
+				        VALUES ( FactSales[CustomerKey] ),
+				        FactSales[DocumentType] = "FT",
+				        DATESINPERIOD ( 'Calendar'[Date], _Start - 1, -12, MONTH )
+				    )
+				VAR _Current =
+				    CALCULATETABLE ( VALUES ( FactSales[CustomerKey] ), FactSales[DocumentType] = "FT" )
+				RETURN COUNTROWS ( EXCEPT ( _PrevYear, _Current ) )
+				```
+			formatString: #,0
+			displayFolder: 05 Clienti
+
+		measure 'Customer Rank' = ```
+				IF (
+				    HASONEVALUE ( Customer[CustomerName] ),
+				    RANKX ( ALLSELECTED ( Customer[CustomerName] ), [Net Sales], , DESC, DENSE )
+				)
+				```
+			formatString: #,0
+			displayFolder: 05 Clienti
+
+		measure 'Top 10 Customers Share %' = ```
+				VAR _Top10 = TOPN ( 10, ALLSELECTED ( Customer[CustomerName] ), [Net Sales], DESC )
+				RETURN DIVIDE ( CALCULATE ( [Net Sales], _Top10 ), CALCULATE ( [Net Sales], ALLSELECTED ( Customer ) ) )
+				```
+			formatString: 0.0%
+			displayFolder: 05 Clienti
+
+		measure 'Pareto Cumulative %' = ```
+				VAR _CurrentSales = [Net Sales]
+				VAR _AllCustomers =
+				    ADDCOLUMNS ( ALLSELECTED ( Customer[CustomerName] ), "@Sales", [Net Sales] )
+				VAR _Cumulative =
+				    SUMX ( FILTER ( _AllCustomers, [@Sales] >= _CurrentSales ), [@Sales] )
+				RETURN DIVIDE ( _Cumulative, CALCULATE ( [Net Sales], ALLSELECTED ( Customer ) ) )
+				```
+			formatString: 0.0%
+			displayFolder: 05 Clienti
+
+		measure 'Revenue Share by Category %' = DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], ALLSELECTED ( Product[ProductCategory] ) ) )
+			formatString: 0.0%
+			displayFolder: 06 Prodotti
+
+		measure 'Avg Net Price' = DIVIDE ( [Net Sales], [Quantity Sold] )
+			formatString: #,0
+			displayFolder: 06 Prodotti
+
+		measure 'Avg Std Cost' = DIVIDE ( [Std COGS], [Quantity Sold] )
+			formatString: #,0
+			displayFolder: 06 Prodotti
+
+		measure 'Selected Period Label' = ```
+				VAR _Min = MIN ( 'Calendar'[Date] )
+				VAR _Max = MAX ( 'Calendar'[Date] )
+				RETURN FORMAT ( _Min, "mmm yyyy" ) & " - " & FORMAT ( _Max, "mmm yyyy" )
+				```
+			displayFolder: 07 UI e formattazione
+
+		measure 'Title P&L' = "Conto economico riclassificato | " & [Selected Period Label]
+			displayFolder: 07 UI e formattazione
+
+		measure 'KPI Color YoY' = ```
+				VAR _v = [YoY Growth %]
+				RETURN
+				    SWITCH (
+				        TRUE (),
+				        ISBLANK ( _v ), "#8A94A6",
+				        _v >= 0.03, "#1E8E5A",
+				        _v >= 0, "#E0A100",
+				        "#C0392B"
+				    )
+				```
+			displayFolder: 07 UI e formattazione
+
+		measure 'KPI Color Margin' = ```
+				VAR _d = [Gross Margin % Delta pp]
+				RETURN IF ( ISBLANK ( _d ), "#8A94A6", IF ( _d >= 0, "#1E8E5A", "#C0392B" ) )
+				```
+			displayFolder: 07 UI e formattazione
+
+		partition 'FactPL' = m
+			mode: import
+			source =
+					let
+					    Source = Csv.Document(File.Contents("C:\Projects\dashboard-conto-economico\data\model\fact_pl.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					    Typed = Table.TransformColumnTypes(Promoted, {{"DateKey", Int64.Type}, {"AccountKey", Int64.Type}, {"CostCenterKey", Int64.Type}, {"SourceSystem", type text}, {"Amount", type number}, {"SignedAmount", type number}}, "en-US")
+					in
+					    Typed
+
+	relationship r1
+		fromColumn: FactSales.DateKey
+		toColumn: Calendar.DateKey
+
+	relationship r2
+		fromColumn: FactSales.CustomerKey
+		toColumn: Customer.CustomerKey
+
+	relationship r3
+		fromColumn: FactSales.ProductKey
+		toColumn: Product.ProductKey
+
+	relationship r4
+		fromColumn: FactSales.SalesRepKey
+		toColumn: SalesRep.SalesRepKey
+
+	relationship r5
+		fromColumn: FactPL.DateKey
+		toColumn: Calendar.DateKey
+
+	relationship r6
+		fromColumn: FactPL.AccountKey
+		toColumn: Account.AccountKey
+
+	relationship r7
+		fromColumn: FactPL.CostCenterKey
+		toColumn: CostCenter.CostCenterKey
