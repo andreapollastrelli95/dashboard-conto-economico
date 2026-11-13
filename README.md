@@ -1,4 +1,6 @@
-# Dashboard di controllo di gestione per un'azienda manifatturiera con dati simulati: 
+# Dashboard Conto Economico e Performance Aziendale per un'azienda manifatturiera
+
+Obiettivi del progetto:
 
 - Conto economico riclassificato e analisi della marginalità.
 
